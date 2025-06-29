@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5_RAITHAN_बह्रमास्त्र_नोट्स_</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: #1c1c1c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .subheading {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #ccc;
+            font-weight: normal;
+        }
+
+        .subheading a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #video-player {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background: #1c1c1c;
+            padding: 10px;
+        }
+
+        #url-input-container {
+            display: none;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        #url-input-container input {
+            width: 70%;
+            padding: 10px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        #url-input-container button {
+            width: 25%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        #url-input-container button:hover {
+            background: #0056b3;
+        }
+
+        .search-bar {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .no-results {
+            color: red;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+            display: none;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 15px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            margin: 0 5px;
+        }
+
+        .tab:hover {
+            background: #007bff;
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        .content {
+            display: none;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        .video-list, .pdf-list, .other-list {
+            text-align: left;
+        }
+
+        .video-list a, .pdf-list a, .other-list a {
+            display: block;
+            padding: 10px;
+            background: #f5f7fa;
+            margin: 5px 0;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .video-list a:hover, .pdf-list a:hover, .other-list a:hover {
+            background: #007bff;
+            color: white;
+            transform: translateX(10px);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 15px;
+            background: #1c1c1c;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .footer a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+  <!-- 📡 Static Telegram Channel Link -->
+<div style="background:black; text-align:center; padding:10px 0;">
+  <a href="https://t.me/+dTOeJjj5JG1mMmQ1" target="_blank"
+    style="color:#00ffff; font-size:16px; font-weight:bold;
+    font-family:'Courier New', monospace; text-decoration:none;">
+    📡 Join Our Telegram Channel: <span style="text-decoration: underline;">Click Here</span>
+  </a>
+</div>
+
+<!-- 🔴 Scrolling Hacker Title -->
+<marquee direction="left" scrollamount="6"
+  style="background:black; color:red; font-size:22px;
+  font-weight:bold; padding:10px 0;
+  font-family:'Courier New', monospace;">
+  💻 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐓𝐇𝐄 𝐇𝐀𝐂𝐊𝐈𝐍𝐆 𝐖𝐎𝐑𝐋𝐃 𝐎𝐅 𝐃𝐔𝐃𝐄 𝐍𝐀𝐕𝐄𝐄𝐍 👾
+</marquee>
+
+
+    <div class="header">
+        RAJASTHAN_बह्रमास्त्र_नोट्स_
+        <div class="subheading">Extracted By : <a href="https://t.me/💻 𝐃𝐮𝐝𝐞 𝐍𝐚𝐯𝐞𝐞𝐧 𝐇𝐚𝐜𝐤𝐞𝐫 👾" target="_blank">☠💀 🅳Ａ🆁ｋＴｅｒｍＩｎａＬ💀</a></div>
+        <div class="subheading">‍💻☠️ Developer : <a href="https://t.me/AllCourseexam" target="_blank">⚠️ 𝐃𝐮𝐝𝐞 𝐍𝐚𝐯𝐞𝐞𝐧 𝐊𝐮𝐦𝐚𝐫 𝐒𝐡𝐚𝐫𝐦𝐚 ⚠️</a></div>
+   
+    </div>
+
+    <div id="video-player">
+        <video id="engineer-babu-player" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360">
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+            </p>
+        </video>
+    </div>
+
+    <div id="url-input-container">
+        <input type="text" id="url-input" placeholder="Enter video URL to play...">
+        <button onclick="playCustomUrl()">Play</button>
+    </div>
+
+    <button onclick="toggleUrlInput()" style="margin: 20px auto; padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; display: block; width: 90%; max-width: 600px;">Enter Custom URL</button>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for videos, PDFs, or other resources..." oninput="filterContent()">
+    </div>
+
+    <div id="noResults" class="no-results">No results found.</div>
+
+    <div class="container">
+        <div class="tab" onclick="showContent('videos')">Videos</div>
+        <div class="tab" onclick="showContent('pdfs')">PDFs</div>
+        <div class="tab" onclick="showContent('others')">Others</div>
+    </div>
+
+    <div id="videos" class="content">
+        <h2>All Video Lectures</h2>
+        <div class="video-list">
+            
+        </div>
+    </div>
+
+    <div id="pdfs" class="content">
+        <h2>All PDFs</h2>
+        <div class="pdf-list">
+            <a href="https://appxcontent.kaxa.in/paid_course4/2024-09-12-0.5598747301010747.pdf" target="_blank">बह्रमास्त्र नोट्स  मेवाड़ का इतिहास</a><a href="https://appxcontent.securevideo.in/paid_course4/2024-10-08-0.2945951947232368.pdf" target="_blank">ब्रह्मास्त्र नोट्स ॥ राजस्थान कला एवं संस्कृति ॥ भाग -01</a><a href="https://appxcontent.securevideo.in/paid_course4/2024-10-08-0.9382256903951867.pdf" target="_blank">ब्रह्मास्त्र नोट्स ।  राज . कला एवं संस्कृति । भाग -2</a><a href="https://appxcontent.securevideo.in/paid_course4/2024-10-08-0.06266936334592055.pdf" target="_blank">ब्राह्मास्त्र नोटस ॥ राज .कला एवं संस्कृति ॥ भाग -03</a><a href="https://appxcontent.securevideo.in/paid_course4/2024-10-08-0.8654311663008158.pdf" target="_blank">ब्रह्मास्त्र नोट्स ॥ राज . कला एवं संस्कृति ॥ भाग -04</a><a href="https://appxcontent.kaxa.in/paid_course4/2024-09-21-0.46119186557130365.pdf" target="_blank">ब्रह्रास्त्र नोटस - राज . राजव्यवस्था भाग 1</a><a href="https://appxcontent.kaxa.in/paid_course4/2024-09-21-0.6485203936140489.pdf" target="_blank">ब्रह्मास्त्र नोटस ॥ राज.राज व्यवस्था भाग 2</a><a href="https://appxcontent.kaxa.in/paid_course4/2024-09-21-0.6912814870111861.pdf" target="_blank">ब्रह्मास्त्र नोटस ॥ राज.राज व्यवस्था भाग 3</a><a href="https://appxcontent.kaxa.in/paid_course4/2024-09-21-0.3569883876116098.pdf" target="_blank">ब्रह्रास्त्र नोटस - राज . राजव्यवस्था भाग 4</a><a href="https://appxcontent.kaxa.in/paid_course4/2024-09-17-0.9340294714982893.pdf" target="_blank">रायथान ब्रह्मास्त्र नोटस- विश्व का भूगोल - भाग 1</a><a href="https://appxcontent.kaxa.in/paid_course4/2024-09-17-0.10609298410045209.pdf" target="_blank">रायथान ब्रह्मास्त्र नोट्स विश्व का भूगोल - भाग 2</a><a href="https://appxcontent.kaxa.in/paid_course4/2024-09-17-0.0667667187510832.pdf" target="_blank">रायथान ब्रह्मास्त्र नोट्स - विश्व का भूगोल -भाग 3</a><a href="https://appxcontent.securevideo.in/paid_course4/2024-10-08-0.9827361388979563.pdf" target="_blank">ब्रह्मास्त्र नोट्स । राजस्थान का भूगोल । भाग -1</a><a href="https://appxcontent.securevideo.in/paid_course4/2024-10-08-0.7561201154314894.pdf" target="_blank">ब्रह्मास्त्र नोट्स ॥ राजस्थान भूगोल ॥ भाग -02</a><a href="https://appxcontent.securevideo.in/paid_course4/2024-10-08-0.9800972591091446.pdf" target="_blank">ब्रह्मास्त्र नोट्स ॥ राजस्थान का भूगोल ॥ भाग -03</a><a href="https://appxcontent.securevideo.in/paid_course4/2024-10-08-0.7087493676494478.pdf" target="_blank">ब्राह्मास्त्र नोटस ॥ राजस्थान भूगोल ॥ भाग -04</a><a href="https://appxcontent.kaxa.in/paid_course4/2024-09-17-0.454039897820955.pdf" target="_blank">रायथान ब्रह्मास्त्र नोटस - भारत का भूगोल - भाग 1</a><a href="https://appxcontent.kaxa.in/paid_course4/2024-09-17-0.8129777242296279.pdf" target="_blank">रायथान ब्रह्मास्त्र नोट्स - भारत का भूगोल भाग 2</a><a href="https://appxcontent.kaxa.in/paid_course4/2024-09-17-0.6704282288481198.pdf" target="_blank">रायथान  ब्रह्मास्त्र नोट्स - भारत का भूगोल - भाग 3</a><a href="https://appxcontent.securevideo.in/paid_course4/2024-10-08-0.12000778841629134.pdf" target="_blank">रायथान ब्रह्मास्त्र नोटस - भारत का संविधान ॥ भाग -1</a><a href="https://appxcontent.securevideo.in/paid_course4/2024-10-08-0.2227314778932552.pdf" target="_blank">रायथान ब्राह्रास्त्र नोटस - भारत का संविधान ॥ भाग -2</a><a href="https://appxcontent.securevideo.in/paid_course4/2024-10-08-0.540091872976525.pdf" target="_blank">रायथान ब्रह्मास्त्र नोट्स ॥ भारत कासंविधान ॥ भाग -3</a><a href="https://appxcontent.securevideo.in/paid_course4/2024-10-08-0.11857939896792846.pdf" target="_blank">रायथान  ब्रह्मास्त्र नोट्स ॥ भारत का संविधान ॥ भाग 4</a><a href="https://appxcontent.kaxa.in/paid_course4/2024-12-10-0.2851763833839116.pdf" target="_blank">मनोविज्ञान - भाग -01</a><a href="https://appxcontent.kaxa.in/paid_course4/2024-12-10-0.8970365655087378.pdf" target="_blank">शिक्षा मनोविज्ञान - 02</a><a href="https://appxcontent.kaxa.in/paid_course4/2024-12-10-0.17157142839108164.pdf" target="_blank">मनोविज्ञान भाग -03</a><a href="https://appx-content-v2.classx.co.in/paid_course4/2025-01-24-0.23749811224518425.pdf" target="_blank">विषय सूची</a><a href="https://appx-content-v2.classx.co.in/paid_course4/2025-01-24-0.9165644892483611.pdf" target="_blank">भाग-01 || भारत का इतिहास॥ प्राचीन इतिहास</a><a href="https://appx-content-v2.classx.co.in/paid_course4/2025-01-24-0.9805105895758064.pdf" target="_blank">भाग -02॥ मध्यकालीन भारत का इतिहास</a><a href="https://appx-content-v2.classx.co.in/paid_course4/2025-01-24-0.7710221742655499.pdf" target="_blank">भाग -03॥ आधुनिक भारत का इतिहास</a>
+        </div>
+    </div>
+
+    <div id="others" class="content">
+        <h2>Other Resources</h2>
+        <div class="other-list">
+            
+        </div>
+    </div>
+
+    <div class="footer">Extracted By : <a href="https://t.me/🔓 Access Alert	🔓 𝐃𝐮𝐝𝐞 𝐍𝐚𝐯𝐞𝐞𝐧 𝐇𝐚𝐜𝐤𝐞𝐫 🖥️HtmlBot" target="_blank">💻 𝐃𝐮𝐝𝐞 𝐍𝐚𝐯𝐞𝐞𝐧 𝐇𝐚𝐜𝐤𝐞𝐫 👾</a>&nbsp;|&nbsp;
+<span style="font-family:'Courier New', monospace; font-size:14px; color:#00ffff;">
+🧑‍💻 Visitors:
+</span>
+<img src="https://hitwebcounter.com/counter/counter.php?page=12087741&style=0036&nbdigits=5&type=page&initCount=0"
+     title="Free Counter" alt="web counter" style="vertical-align:middle;" border="0" /></div>
+
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    <script>
+        const player = videojs('engineer-babu-player', {
+            controls: true,
+            autoplay: false,
+            preload: 'auto',
+            fluid: true,
+            controlBar: {
+                children: [
+                    'playToggle',
+                    'volumePanel',
+                    'currentTimeDisplay',
+                    'timeDivider',
+                    'durationDisplay',
+                    'progressControl',
+                    'liveDisplay',
+                    'remainingTimeDisplay',
+                    'customControlSpacer',
+                    'playbackRateMenuButton',
+                    'chaptersButton',
+                    'descriptionsButton',
+                    'subsCapsButton',
+                    'audioTrackButton',
+                    'fullscreenToggle'
+                ]
+            }
+        });
+
+        function playVideo(url) {
+            if (url.includes('.m3u8')) {
+                document.getElementById('video-player').style.display = 'block';
+                player.src({ src: url, type: 'application/x-mpegURL' });
+                player.play().catch(() => {
+                    window.open(url, '_blank');
+                });
+            } else {
+                window.open(url, '_blank');
+            }
+        }
+
+        function toggleUrlInput() {
+            const urlInputContainer = document.getElementById('url-input-container');
+            urlInputContainer.style.display = urlInputContainer.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function playCustomUrl() {
+            const url = document.getElementById('url-input').value;
+            if (url) {
+                playVideo(url);
+            }
+        }
+
+        function showContent(tabName) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                content.style.display = 'none';
+            });
+            const selectedContent = document.getElementById(tabName);
+            if (selectedContent) {
+                selectedContent.style.display = 'block';
+            }
+            filterContent();
+        }
+
+        function filterContent() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const categories = ['videos', 'pdfs', 'others'];
+            let hasResults = false;
+
+            categories.forEach(category => {
+                const items = document.querySelectorAll(`#${category} .${category}-list a`);
+                let categoryHasResults = false;
+
+                items.forEach(item => {
+                    const itemText = item.textContent.toLowerCase();
+                    if (itemText.includes(searchTerm)) {
+                        item.style.display = 'block';
+                        categoryHasResults = true;
+                        hasResults = true;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                const categoryHeading = document.querySelector(`#${category} h2`);
+                if (categoryHeading) {
+                    categoryHeading.style.display = categoryHasResults ? 'block' : 'none';
+                }
+            });
+
+            const noResultsMessage = document.getElementById('noResults');
+            if (noResultsMessage) {
+                noResultsMessage.style.display = hasResults ? 'none' : 'block';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showContent('videos');
+        });
+    </script>
+</body>
+</html>
+    
