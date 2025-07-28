@@ -1,0 +1,240 @@
+
+
+<style>
+  .naukri-container {
+    font-family: 'Segoe UI', sans-serif;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 16px;
+    margin: 50px auto;
+    max-width: 700px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* 🔝 Top Thick Bar */
+  .progress-bar {
+    position: relative;
+    height: 22px;
+    width: 100%;
+    background-color: #333;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    background-color: #ff9800;
+    transition: width 1s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .progress-bar-text {
+    position: relative;
+    z-index: 2;
+    line-height: 22px;
+  }
+
+  .coming-soon-box {
+    border: 2px solid #ff9800;
+    padding: 14px 28px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    animation: blink 1.2s infinite;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 12px #ff9800;
+  }
+
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+  }
+
+  .naukri-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+  }
+
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 20px 0;
+  }
+</style>
+
+<div class="naukri-container">
+
+  <!-- 🔝 Progress Bar with Countdown -->
+  <div class="progress-bar">
+    <div class="progress-bar-fill" id="progress-fill"></div>
+    <div class="progress-bar-text">Redirecting in <span id="countdown">5</span> seconds...</div>
+  </div>
+
+  <div class="coming-soon-box">🚀 STARTING Tomorrow</div>
+
+<div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBLG8y5pRBIjUZ89212p4ufWGaiSIjySB8b5ziH1VreUyjud-pUT7JWsweG-C8C_NJKJyt9nkRz6t66aFJta0hhDmu0CG7gwELUbAP5KC5SPMoOPfB7OQOkzIR_ygpkm_idVkOR1CijE67L27hwA4vjtM5NF-XQXVtKLECgWEfQTchUD-V1iLYEaeF-mI/s1280/1000378291.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1280" data-original-width="1280" height="400" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBLG8y5pRBIjUZ89212p4ufWGaiSIjySB8b5ziH1VreUyjud-pUT7JWsweG-C8C_NJKJyt9nkRz6t66aFJta0hhDmu0CG7gwELUbAP5KC5SPMoOPfB7OQOkzIR_ygpkm_idVkOR1CijE67L27hwA4vjtM5NF-XQXVtKLECgWEfQTchUD-V1iLYEaeF-mI/w400-h400/1000378291.jpg" width="400" /></a></div><br />
+
+
+
+  <p>Naukri Pulse पर कल शुरू हो रही है सबसे किफायती और भरोसेमंद ऑनलाइन शॉपिंग सेवा।</p>
+
+
+
+  <p> अब जरूरत का हर सामान नौकरी प्लस पर कल से</p>
+
+</div>
+
+<script>
+  let seconds = 7; // ← यही बदलना है timing के लिए (5, 10, 15 etc.)
+  let countdownEl = document.getElementById("countdown");
+  let progressBar = document.getElementById("progress-fill");
+
+  let totalTime = seconds;
+
+  let interval = setInterval(() => {
+    seconds--;
+    countdownEl.textContent = seconds;
+
+    let progress = ((totalTime - seconds) / totalTime) * 100;
+    progressBar.style.width = progress + "%";
+
+    if (seconds <= 0) {
+      clearInterval(interval);
+      window.location.href = "https://naukripulse.blogspot.com/p/result.html";
+    }
+  }, 1000);
+</script><style>
+  .naukri-container {
+    font-family: 'Segoe UI', sans-serif;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 16px;
+    margin: 50px auto;
+    max-width: 700px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* 🔝 Top Thick Bar */
+  .progress-bar {
+    position: relative;
+    height: 22px;
+    width: 100%;
+    background-color: #333;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    background-color: #ff9800;
+    transition: width 1s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .progress-bar-text {
+    position: relative;
+    z-index: 2;
+    line-height: 22px;
+  }
+
+  .coming-soon-box {
+    border: 2px solid #ff9800;
+    padding: 14px 28px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    animation: blink 1.2s infinite;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 12px #ff9800;
+  }
+
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+  }
+
+  .naukri-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+  }
+
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 20px 0;
+  }
+</style>
+
+<div class="naukri-container">
+
+  <!-- 🔝 Progress Bar with Countdown -->
+  <div class="progress-bar">
+    <div class="progress-bar-fill" id="progress-fill"></div>
+    <div class="progress-bar-text">Redirecting in <span id="countdown">5</span> seconds...</div>
+  </div>
+
+  <div class="coming-soon-box">🚀 STARTING Tomorrow</div>
+
+  <p>Naukri Pulse पर कल शुरू हो रही है सबसे किफायती और भरोसेमंद ऑनलाइन शॉपिंग सेवा।</p>
+
+
+  <p> अब जरूरत का हर सामान नौकरी प्लस पर कल से</p>
+
+</div>
+
+<script>
+  let seconds = 7; // ← यही बदलना है timing के लिए (5, 10, 15 etc.)
+  let countdownEl = document.getElementById("countdown");
+  let progressBar = document.getElementById("progress-fill");
+
+  let totalTime = seconds;
+
+  let interval = setInterval(() => {
+    seconds--;
+    countdownEl.textContent = seconds;
+
+    let progress = ((totalTime - seconds) / totalTime) * 100;
+    progressBar.style.width = progress + "%";
+
+    if (seconds <= 0) {
+      clearInterval(interval);
+      window.location.href = "https://naukripulse.blogspot.com/p/result.html";
+    }
+  }, 1000);
+</script>
