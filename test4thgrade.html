@@ -3,22 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Test Series</title>
+  <title>Naukri Pulse Test Series</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       background: #f5f5f5;
       color: #111;
-      padding: 40px 10px;
       margin: 0;
+      padding: 0;
+    }
+
+    .hero {
+      padding: 30px 20px 20px;
+      background: #fdfdfd;
+      max-width: 1000px;
+      margin: 0 auto;
+      border-left: 6px solid #004080;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    .hero h1 {
+      margin: 0;
+      color: #004080;
+      font-size: 2.4rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .hero hr {
+      border: none;
+      height: 2px;
+      background: linear-gradient(to right, #004080, #c00);
+      margin: 10px auto 30px;
+      width: 80%;
+    }
+
+    .hero p {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    .hero p:last-child {
+      color: #c00;
+      font-weight: 700;
+      margin-top: 20px;
     }
 
     .container {
       max-width: 1100px;
-      margin: auto;
+      margin: 30px auto;
+      padding: 0 10px 50px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
     }
 
     .card {
@@ -34,8 +75,8 @@
     }
 
     .card-img {
-      height: 180px;
-      background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm6srhy_m9K7e4KGluwQ5pgKpQMW-KxjTI4nJ2FFdNw5rt_TVjqdgjxmApbbWeQKfm-g7QNyThnVvPQ9OecncQbLKtwxY2qvIoswjtUc5AUm1HwabZe5B1wQUfPxbLc4xTZF8dN6R1LkZ4P5adlqLHWWZSCfhk46-pbQPLU3mw-Tbaqbw1xf0IvOdhq14/s400/1000379309.jpg');
+      height: 200px;
+      background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjmKIVlYD9GS3blBde0vi4e_yU83_cbo-KVUHOW7MAYvpvTcV8z3GFctj9lWI4XfHyVLkGKzBxmaRWSwsrOzUYY2iaQt3cNGOrJGg5tHyyTwUnnCoULmOmbjsqJjGFS92dCFW7KGqudrL2N4bg6UIfvvtxVAUZg7uN0-Upttg6C49uEsVMwj04xQ4efw/s1200/1000379608.jpg');
       background-size: cover;
       background-position: center;
     }
@@ -45,20 +86,20 @@
     }
 
     .card-title {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       font-weight: 600;
-      margin: 0 0 10px;
+      margin-bottom: 8px;
     }
 
     .card-desc {
-      font-size: 0.9rem;
+      font-size: 1rem;
       color: #333;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     .card-btn {
       display: inline-block;
-      padding: 8px 16px;
+      padding: 10px 16px;
       background-color: #007bff;
       color: white;
       border-radius: 8px;
@@ -70,139 +111,47 @@
     .card-btn:hover {
       background-color: #0056b3;
     }
+
+    @media(max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <h1 style="text-align:center; color:#111;">📘 चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</h1>
-  <p style="text-align:center; font-size:1.1rem; margin-top:-20px; margin-bottom:40px; color:#c00;">
-   
-  </p>
+  <div class="hero">
+    <h1>📘 NAUKRI PULSE <span style="color:#c00;">Online Test Series</span></h1>
+    <hr />
+    <p>देश की सबसे भरोसेमंद और अद्वितीय ऑनलाइन टेस्ट सीरीज़ — <br>
+    जहाँ तैयारी हो सफलता की गारंटी के साथ।</p>
+    <p>🚀 Unlock all premium test series — only ₹99!</p>
+  </div>
 
   <div class="container">
 
-    <!-- Repeatable Cards -->
-    <!-- You can copy-paste below card block and change Test number -->
-    <!-- Test 01 to Test 11 -->
-
-    <!-- Test 01 -->
+    <!-- Test Cards (1 to 11) -->
     <div class="card">
       <div class="card-img"></div>
       <div class="card-content">
-        <div class="card-title">Test 01 - चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</div>
-        <div class="card-desc">इस टेस्ट में सामान्य ज्ञान, गणित और हिंदी से जुड़े महत्वपूर्ण प्रश्न शामिल हैं।</div>
-        <a href="#" class="card-btn">Start Test</a>
+        <div class="card-title">Test 01</div>
+        <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025।</div>
+        <a href="https://naukripulse.github.io/4thgradeTEST8001.html" class="card-btn">Start Test</a>
       </div>
     </div>
 
-    <!-- Test 02 to 11 -->
-    <!-- Dynamically created below -->
-
-    <!-- START OF LOOP -->
-    <!-- Note: Only changing number in each card title -->
-    <!-- You can edit description individually if needed -->
-
-    <!-- Test 02 -->
-    <div class="card">
-      <div class="card-img"></div>
-      <div class="card-content">
-        <div class="card-title">Test 02 - चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</div>
-        <div class="card-desc">इस टेस्ट में सामान्य ज्ञान, गणित और हिंदी से जुड़े महत्वपूर्ण प्रश्न शामिल हैं।</div>
-        <a href="#" class="card-btn">Start Test</a>
-      </div>
-    </div>
-
-    <!-- Test 03 -->
-    <div class="card">
-      <div class="card-img"></div>
-      <div class="card-content">
-        <div class="card-title">Test 03 - चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</div>
-        <div class="card-desc">इस टेस्ट में सामान्य ज्ञान, गणित और हिंदी से जुड़े महत्वपूर्ण प्रश्न शामिल हैं।</div>
-        <a href="#" class="card-btn">Start Test</a>
-      </div>
-    </div>
-
-    <!-- Test 04 -->
-    <div class="card">
-      <div class="card-img"></div>
-      <div class="card-content">
-        <div class="card-title">Test 04 - चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</div>
-        <div class="card-desc">इस टेस्ट में सामान्य ज्ञान, गणित और हिंदी से जुड़े महत्वपूर्ण प्रश्न शामिल हैं।</div>
-        <a href="#" class="card-btn">Start Test</a>
-      </div>
-    </div>
-
-    <!-- Test 05 -->
-    <div class="card">
-      <div class="card-img"></div>
-      <div class="card-content">
-        <div class="card-title">Test 05 - चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</div>
-        <div class="card-desc">इस टेस्ट में सामान्य ज्ञान, गणित और हिंदी से जुड़े महत्वपूर्ण प्रश्न शामिल हैं।</div>
-        <a href="#" class="card-btn">Start Test</a>
-      </div>
-    </div>
-
-    <!-- Test 06 -->
-    <div class="card">
-      <div class="card-img"></div>
-      <div class="card-content">
-        <div class="card-title">Test 06 - चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</div>
-        <div class="card-desc">इस टेस्ट में सामान्य ज्ञान, गणित और हिंदी से जुड़े महत्वपूर्ण प्रश्न शामिल हैं।</div>
-        <a href="#" class="card-btn">Start Test</a>
-      </div>
-    </div>
-
-    <!-- Test 07 -->
-    <div class="card">
-      <div class="card-img"></div>
-      <div class="card-content">
-        <div class="card-title">Test 07 - चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</div>
-        <div class="card-desc">इस टेस्ट में सामान्य ज्ञान, गणित और हिंदी से जुड़े महत्वपूर्ण प्रश्न शामिल हैं।</div>
-        <a href="#" class="card-btn">Start Test</a>
-      </div>
-    </div>
-
-    <!-- Test 08 -->
-    <div class="card">
-      <div class="card-img"></div>
-      <div class="card-content">
-        <div class="card-title">Test 08 - चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</div>
-        <div class="card-desc">इस टेस्ट में सामान्य ज्ञान, गणित और हिंदी से जुड़े महत्वपूर्ण प्रश्न शामिल हैं।</div>
-        <a href="#" class="card-btn">Start Test</a>
-      </div>
-    </div>
-
-    <!-- Test 09 -->
-    <div class="card">
-      <div class="card-img"></div>
-      <div class="card-content">
-        <div class="card-title">Test 09 - चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</div>
-        <div class="card-desc">इस टेस्ट में सामान्य ज्ञान, गणित और हिंदी से जुड़े महत्वपूर्ण प्रश्न शामिल हैं।</div>
-        <a href="#" class="card-btn">Start Test</a>
-      </div>
-    </div>
-
-    <!-- Test 10 -->
-    <div class="card">
-      <div class="card-img"></div>
-      <div class="card-content">
-        <div class="card-title">Test 10 - चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</div>
-        <div class="card-desc">इस टेस्ट में सामान्य ज्ञान, गणित और हिंदी से जुड़े महत्वपूर्ण प्रश्न शामिल हैं।</div>
-        <a href="#" class="card-btn">Start Test</a>
-      </div>
-    </div>
-
-    <!-- Test 11 -->
-    <div class="card">
-      <div class="card-img"></div>
-      <div class="card-content">
-        <div class="card-title">Test 11 - चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</div>
-        <div class="card-desc">इस टेस्ट में सामान्य ज्ञान, गणित और हिंदी से जुड़े महत्वपूर्ण प्रश्न शामिल हैं।</div>
-        <a href="#" class="card-btn">Start Test</a>
-      </div>
-    </div>
-
-    <!-- END OF LOOP -->
+    <!-- Replace # with actual links when ready -->
+    <div class="card"><div class="card-img"></div><div class="card-content"><div class="card-title">Test 02</div><div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025।</div><a href="#" class="card-btn">Start Test</a></div></div>
+    <div class="card"><div class="card-img"></div><div class="card-content"><div class="card-title">Test 03</div><div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025।</div><a href="#" class="card-btn">Start Test</a></div></div>
+    <div class="card"><div class="card-img"></div><div class="card-content"><div class="card-title">Test 04</div><div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025।</div><a href="#" class="card-btn">Start Test</a></div></div>
+    <div class="card"><div class="card-img"></div><div class="card-content"><div class="card-title">Test 05</div><div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025।</div><a href="#" class="card-btn">Start Test</a></div></div>
+    <div class="card"><div class="card-img"></div><div class="card-content"><div class="card-title">Test 06</div><div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025।</div><a href="#" class="card-btn">Start Test</a></div></div>
+    <div class="card"><div class="card-img"></div><div class="card-content"><div class="card-title">Test 07</div><div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025।</div><a href="#" class="card-btn">Start Test</a></div></div>
+    <div class="card"><div class="card-img"></div><div class="card-content"><div class="card-title">Test 08</div><div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025।</div><a href="#" class="card-btn">Start Test</a></div></div>
+    <div class="card"><div class="card-img"></div><div class="card-content"><div class="card-title">Test 09</div><div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025।</div><a href="#" class="card-btn">Start Test</a></div></div>
+    <div class="card"><div class="card-img"></div><div class="card-content"><div class="card-title">Test 10</div><div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025।</div><a href="#" class="card-btn">Start Test</a></div></div>
+    <div class="card"><div class="card-img"></div><div class="card-content"><div class="card-title">Test 11</div><div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025।</div><a href="#" class="card-btn">Start Test</a></div></div>
 
   </div>
 </body>
