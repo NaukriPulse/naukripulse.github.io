@@ -1,0 +1,248 @@
+<style>
+  .naukri-container {
+    font-family: 'Segoe UI', sans-serif;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 16px;
+    margin: 50px auto;
+    max-width: 700px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* 🔝 Top Thick Bar */
+  .progress-bar {
+    position: relative;
+    height: 22px;
+    width: 100%;
+    background-color: #333;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    background-color: #ff9800;
+    transition: width 1s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .progress-bar-text {
+    position: relative;
+    z-index: 2;
+    line-height: 22px;
+  }
+
+  .coming-soon-box {
+    border: 2px solid #ff9800;
+    padding: 14px 28px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    animation: blink 1.2s infinite;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 12px #ff9800;
+  }
+
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+  }
+
+  .naukri-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+  }
+
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 20px 0;
+  }
+</style>
+
+<div class="naukri-container">
+
+  <!-- 🔝 Progress Bar with Countdown -->
+  <div class="progress-bar">
+    <div class="progress-bar-fill" id="progress-fill"></div>
+    <div class="progress-bar-text">Redirecting in <span id="countdown">5</span> seconds...</div>
+  </div>
+
+  <div class="coming-soon-box">🚀 STARTING Soon</div>
+
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyh8Sk2CDWHGSJfWOYqKJLu2P6oZhlPpN9_kSTFlpQCyQaiuFAl0HPkSbKBXquheGdkcMuA9MulwAmbF3DR_-HFQ-mTx6WIDXeA_DQH-rMqkIYQqK4P6WS0-8pUkdmL5h2M4jMF0N38v9zfK4KX_wSCQEQEmX3fm07zTmRXjDP8Pml2qABP4IMGHtkkmQ/s1600/1000379309.jpg" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" data-original-height="1200" data-original-width="1200" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyh8Sk2CDWHGSJfWOYqKJLu2P6oZhlPpN9_kSTFlpQCyQaiuFAl0HPkSbKBXquheGdkcMuA9MulwAmbF3DR_-HFQ-mTx6WIDXeA_DQH-rMqkIYQqK4P6WS0-8pUkdmL5h2M4jMF0N38v9zfK4KX_wSCQEQEmX3fm07zTmRXjDP8Pml2qABP4IMGHtkkmQ/s1600/1000379309.jpg"/></a></div>
+
+
+  <p>Naukri Pulse पर जल्द शुरू हो रही है सबसे भरोसेमंद कोचिंगो की Test Series</p>
+
+
+
+  <p>जहां आप ऑनलाइन टेस्ट दे सकेंगे और अपने स्कोर जांच सकेंगे क्योंकि अब पढ़ाई का सारा जुगाड मिलेगा naukri pulse पर ही</p>
+
+</div>
+
+<script>
+  let seconds = 10; // ← यही बदलना है timing के लिए (5, 10, 15 etc.)
+  let countdownEl = document.getElementById("countdown");
+  let progressBar = document.getElementById("progress-fill");
+
+  let totalTime = seconds;
+
+  let interval = setInterval(() => {
+    seconds--;
+    countdownEl.textContent = seconds;
+
+    let progress = ((totalTime - seconds) / totalTime) * 100;
+    progressBar.style.width = progress + "%";
+
+    if (seconds <= 0) {
+      clearInterval(interval);
+      window.location.href = "https://naukripulse.blogspot.com/p/result.html";
+    }
+  }, 1000);
+</script><style>
+  .naukri-container {
+    font-family: 'Segoe UI', sans-serif;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 16px;
+    margin: 50px auto;
+    max-width: 700px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* 🔝 Top Thick Bar */
+  .progress-bar {
+    position: relative;
+    height: 22px;
+    width: 100%;
+    background-color: #333;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    background-color: #ff9800;
+    transition: width 1s linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .progress-bar-text {
+    position: relative;
+    z-index: 2;
+    line-height: 22px;
+  }
+
+  .coming-soon-box {
+    border: 2px solid #ff9800;
+    padding: 14px 28px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    animation: blink 1.2s infinite;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 12px #ff9800;
+  }
+
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+  }
+
+  .naukri-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+  }
+
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: 20px 0;
+  }
+</style>
+
+<div class="naukri-container">
+
+  <!-- 🔝 Progress Bar with Countdown -->
+  <div class="progress-bar">
+    <div class="progress-bar-fill" id="progress-fill"></div>
+    <div class="progress-bar-text">Redirecting in <span id="countdown">5</span> seconds...</div>
+  </div>
+
+  <div class="coming-soon-box">🚀 STARTING Soon</div>
+
+  <p><strong>Naukri Pulse</strong> पर जल्द ही शुरू हो रही है <span style="color:#007bff;">सबसे भरोसेमंद कोचिंग संस्थानों की</span> <strong>Online Test Series</strong>!</p>
+
+<p>अब आप घर बैठे ऑनलाइन टेस्ट देकर <strong>तुरंत अपना स्कोर</strong> जान सकेंगे। क्योंकि अब पढ़ाई का हर जुगाड़ मिलेगा एक ही जगह — <span style="color:#28a745;"><strong>Naukri Pulse</strong></span> पर!</p>
+
+<ul style="text-align: left; font-weight: bold; color: #333;">
+  <li>REET Test Series</li>
+  <li>LDC Practice Test</li>
+  <li>4th Grade Model Papers</li>
+  <li>Patwar Online Test</li>
+  <li>VDO Mock Test</li>
+  <li>Lab Assistant Test Series</li>
+  <li>...and many more coming soon!</li>
+</ul>
+
+<p>📚 अपनी तैयारी को दें एक नई दिशा — <strong>Naukri Pulse</strong> के साथ!</p>
+
+</div>
+
+<script>
+  let seconds = 10; // ← यही बदलना है timing के लिए (5, 10, 15 etc.)
+  let countdownEl = document.getElementById("countdown");
+  let progressBar = document.getElementById("progress-fill");
+
+  let totalTime = seconds;
+
+  let interval = setInterval(() => {
+    seconds--;
+    countdownEl.textContent = seconds;
+
+    let progress = ((totalTime - seconds) / totalTime) * 100;
+    progressBar.style.width = progress + "%";
+
+    if (seconds <= 0) {
+      clearInterval(interval);
+      window.location.href = "https://naukripulse.blogspot.com/p/result.html";
+    }
+  }, 1000);
+</script> 
