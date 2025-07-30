@@ -1,184 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Naukri Pulse Test Series</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Series 2025</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f5f5f5;
-      color: #111;
-      padding: 40px 10px;
-      margin: 0;
+    /* 🔁 बस यहां इमेज लिंक बदलना होगा, बाकी सब जगह अपने-आप लग जाएगा */
+    :root{
+      --card-img-url: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8bk2H9CLpuV1QB_1yf_rjATCPlCNgEBrB8vaBnA-V4Mrd7D7gbxAJmyRbUMuJ5iVifZWa9AW2SnLvlmFjx6HLyZmzZXRfQohKit_7hCsbokG1OI6NAda-qifv8bkmmeTG6M0lPor5nnW5eVLJWabLkEBtbKx4-eFegs51y8obgxnmet6cyW4YzDz4jg/s400/1000380192.jpg');
     }
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
+    body{font-family:'Segoe UI',sans-serif;background:#f9f9f9;margin:0;padding:20px;color:#222;}
+    h1{text-align:center;margin-bottom:28px;}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:1000px;margin:0 auto;}
+    @media(max-width:640px){.grid{grid-template-columns:1fr;}}
 
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card-img {
-      height: 180px;
-      background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8bk2H9CLpuV1QB_1yf_rjATCPlCNgEBrB8vaBnA-V4Mrd7D7gbxAJmyRbUMuJ5iVifZWa9AW2SnLvlmFjx6HLyZmzZXRfQohKit_7hCsbokG1OI6NAda-qifv8bkmmeTG6M0lPor5nnW5eVLJWabLkEBtbKx4-eFegs51y8obgxnmet6cyW4YzDz4jg/s400/1000380192.jpg');
+    .card{background:#fff;border-radius:14px;box-shadow:0 4px 10px rgba(0,0,0,.08);overflow:hidden;transition:.25s;}
+    .card:hover{transform:translateY(-4px);}
+    .card-img{
+      height:180px;          /* चाहें तो aspect-ratio:16/9 भी कर सकते हैं */
+      background-image: var(--card-img-url);
       background-size: cover;
       background-position: center;
     }
-
-    .card-content {
-      padding: 16px;
-    }
-
-    .card-title {
-      font-size: 1.2em;
-      font-weight: bold;
-      margin-bottom: 6px;
-    }
-
-    .card-desc {
-      font-size: 0.95em;
-      color: #555;
-    }
-
-    a {
-      display: inline-block;
-      margin-top: 12px;
-      text-decoration: none;
-      background: #007bff;
-      color: white;
-      padding: 8px 16px;
-      border-radius: 6px;
-      font-weight: 500;
-    }
-
-    a:hover {
-      background: #0056b3;
-    }
+    .card-content{padding:14px 16px;}
+    .card-title{font-size:18px;font-weight:700;margin:0 0 6px;}
+    .card-desc{font-size:14px;color:#555;margin:0 0 10px;}
+    .btn{display:inline-block;padding:8px 14px;background:#0d6efd;color:#fff;text-decoration:none;border-radius:8px;}
+    .btn:hover{background:#0b5ed7;}
   </style>
 </head>
 <body>
 
-<h2 style="text-align:center; margin-bottom: 30px;">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025</h2>
+  <h1>Test Series 2025</h1>
 
-<div class="container">
-  <!-- 11 Test Cards with same image -->
-  <!-- You can replace # links with your actual test URLs -->
-
-  <div class="card">
-    <div class="card-img"></div>
-    <div class="card-content">
-      <div class="card-title">Test 01</div>
-      <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025</div>
-      <a href="#">Start Test</a>
+  <div class="grid">
+    <!-- 1 -->
+    <div class="card">
+      <div class="card-img" role="img" aria-label="Test Thumbnail"></div>
+      <div class="card-content">
+        <div class="card-title">राजस्थान पुलिस टेस्ट सीरीज 2025</div>
+        <p class="card-desc">Free Practice Set | Full Syllabus</p>
+        <a class="btn" href="#">Start Test</a>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <div class="card-img"></div>
-    <div class="card-content">
-      <div class="card-title">Test 02</div>
-      <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025</div>
-      <a href="#">Start Test</a>
+    <!-- 2 -->
+    <div class="card">
+      <div class="card-img" role="img" aria-label="Test Thumbnail"></div>
+      <div class="card-content">
+        <div class="card-title">REET Level 1 टेस्ट सीरीज 2025</div>
+        <p class="card-desc">Free Practice Set | Full Syllabus</p>
+        <a class="btn" href="#">Start Test</a>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <div class="card-img"></div>
-    <div class="card-content">
-      <div class="card-title">Test 03</div>
-      <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025</div>
-      <a href="#">Start Test</a>
+    <!-- 3 -->
+    <div class="card">
+      <div class="card-img"></div>
+      <div class="card-content">
+        <div class="card-title">CTET पेपर 2 टेस्ट सीरीज 2025</div>
+        <p class="card-desc">Free Practice Set | Full Syllabus</p>
+        <a class="btn" href="#">Start Test</a>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <div class="card-img"></div>
-    <div class="card-content">
-      <div class="card-title">Test 04</div>
-      <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025</div>
-      <a href="#">Start Test</a>
+    <!-- 4 -->
+    <div class="card">
+      <div class="card-img"></div>
+      <div class="card-content">
+        <div class="card-title">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</div>
+        <p class="card-desc">Free Practice Set | Full Syllabus</p>
+        <a class="btn" href="#">Start Test</a>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <div class="card-img"></div>
-    <div class="card-content">
-      <div class="card-title">Test 05</div>
-      <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025</div>
-      <a href="#">Start Test</a>
+    <!-- 5 -->
+    <div class="card">
+      <div class="card-img"></div>
+      <div class="card-content">
+        <div class="card-title">पटवारी टेस्ट सीरीज 2025</div>
+        <p class="card-desc">Free Practice Set | Full Syllabus</p>
+        <a class="btn" href="#">Start Test</a>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <div class="card-img"></div>
-    <div class="card-content">
-      <div class="card-title">Test 06</div>
-      <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025</div>
-      <a href="#">Start Test</a>
+    <!-- 6 -->
+    <div class="card">
+      <div class="card-img"></div>
+      <div class="card-content">
+        <div class="card-title">एलडीसी (LDC) टेस्ट सीरीज 2025</div>
+        <p class="card-desc">Free Practice Set | Full Syllabus</p>
+        <a class="btn" href="#">Start Test</a>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <div class="card-img"></div>
-    <div class="card-content">
-      <div class="card-title">Test 07</div>
-      <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025</div>
-      <a href="#">Start Test</a>
+    <!-- 7 -->
+    <div class="card">
+      <div class="card-img"></div>
+      <div class="card-content">
+        <div class="card-title">ग्राम सेवक टेस्ट सीरीज 2025</div>
+        <p class="card-desc">Free Practice Set | Full Syllabus</p>
+        <a class="btn" href="#">Start Test</a>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <div class="card-img"></div>
-    <div class="card-content">
-      <div class="card-title">Test 08</div>
-      <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025</div>
-      <a href="#">Start Test</a>
+    <!-- 8 -->
+    <div class="card">
+      <div class="card-img"></div>
+      <div class="card-content">
+        <div class="card-title">फॉरेस्ट गार्ड टेस्ट सीरीज 2025</div>
+        <p class="card-desc">Free Practice Set | Full Syllabus</p>
+        <a class="btn" href="#">Start Test</a>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <div class="card-img"></div>
-    <div class="card-content">
-      <div class="card-title">Test 09</div>
-      <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025</div>
-      <a href="#">Start Test</a>
+    <!-- 9 -->
+    <div class="card">
+      <div class="card-img"></div>
+      <div class="card-content">
+        <div class="card-title">RSMSSB CET टेस्ट सीरीज 2025</div>
+        <p class="card-desc">Free Practice Set | Full Syllabus</p>
+        <a class="btn" href="#">Start Test</a>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <div class="card-img"></div>
-    <div class="card-content">
-      <div class="card-title">Test 10</div>
-      <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025</div>
-      <a href="#">Start Test</a>
+    <!-- 10 -->
+    <div class="card">
+      <div class="card-img"></div>
+      <div class="card-content">
+        <div class="card-title">REET Level 2 टेस्ट सीरीज 2025</div>
+        <p class="card-desc">Free Practice Set | Full Syllabus</p>
+        <a class="btn" href="#">Start Test</a>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <div class="card-img"></div>
-    <div class="card-content">
-      <div class="card-title">Test 11</div>
-      <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025</div>
-      <a href="#">Start Test</a>
+    <!-- 11 -->
+    <div class="card">
+      <div class="card-img"></div>
+      <div class="card-content">
+        <div class="card-title">कांस्टेबल टेस्ट सीरीज 2025</div>
+        <p class="card-desc">Free Practice Set | Full Syllabus</p>
+        <a class="btn" href="#">Start Test</a>
+      </div>
     </div>
+
   </div>
-
-</div>
-
 </body>
 </html>
