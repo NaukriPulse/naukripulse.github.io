@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Test Series</title>
+  <title>Naukri Pulse Test Series</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -22,6 +22,7 @@
     }
 
     .card {
+      position: relative;
       background: #fff;
       border-radius: 16px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -70,43 +71,191 @@
     .card-btn:hover {
       background-color: #0056b3;
     }
+
+    /* 🔒 LOCKED CARD STYLING */
+    .locked .blur-content {
+      filter: blur(1.5px);
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    .locked::after {
+      content: "🔒";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 5rem;
+      color: #ff0000;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6), 0 0 20px yellow;
+      z-index: 3;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: translate(-50%, -50%) scale(1); }
+      50% { transform: translate(-50%, -50%) scale(1.1); }
+      100% { transform: translate(-50%, -50%) scale(1); }
+    }
   </style>
 </head>
 <body>
 
-  <h1 style="text-align:center; color:#111;">📘 Online Test Series</h1>
+  <div style="max-width: 800px; margin: 50px auto; padding: 30px 40px; border-left: 6px solid #004080; background: #fdfdfd; box-shadow: 0 6px 20px rgba(0,0,0,0.1); border-radius: 12px; font-family: 'Segoe UI', sans-serif;">
+  <h1 style="margin: 0 0 10px 0; color: #004080; font-size: 2.2rem; font-weight: 700; text-align: center;">
+    📘 NAUKRI PULSE <span style="color:#c00;">Online Test Series</span>
+  </h1>
+  <hr style="border: none; height: 2px; background: linear-gradient(to right, #004080, #c00); margin: 10px auto 30px; width: 80%;">
+  <p style="text-align: center; font-size: 1.2rem; color: #111; font-weight: 600; line-height: 1.7;">
+    देश की सबसे भरोसेमंद और अद्वितीय ऑनलाइन टेस्ट सीरीज़ — <br>
+    जहाँ तैयारी हो सफलता की गारंटी के साथ।
+  </p>
+  <p style="text-align: center; font-size: 1.2rem; color: #c00; font-weight: 700; margin-top: 20px;">
+    🚀 unlock all exam tests only rupees 99!
+  </p>
+</div>
+  </p>
 
   <div class="container">
-
-    <div class="card">
-      <div class="card-img"></div>
-      <div class="card-content">
-        <div class="card-title">Rajasthan GK Test 01</div>
-        <div class="card-desc">राजस्थान सामान्य ज्ञान का पहला प्रैक्टिस टेस्ट।</div>
-        <a href="#" class="card-btn">Start Test</a>
+      <!--  FREE TEST -->
+        <div class="card-img"></div>
+        <div class="card-content">
+          <div class="card-title">Test 01</div>
+          <div class="card-desc">पटवारी भर्ती परीक्षा 2025 टेस्ट।</div>
+          <a href="https://.github.io/Test/PatwarTest_01.html" class="card-btn">Start Test</a>
+        </div>
       </div>
     </div>
 
-    <div class="card">
-      <div class="card-img"></div>
-      <div class="card-content">
-        <div class="card-title">Indian History Test 01</div>
-        <div class="card-desc">भारतीय इतिहास से संबंधित प्रश्नों का टेस्ट।</div>
-        <a href="#" class="card-btn">Start Test</a>
+    <!-- 🔒 LOCKED TEST -->
+    <div class="card locked">
+      <div class="blur-content">
+        <div class="card-img"></div>
+        <div class="card-content">
+          <div class="card-title">Test 02</div>
+          <div class="card-desc">पटवारी भर्ती परीक्षा 2025 टेस्ट।</div>
+          <a href="#" class="card-btn">Start Test</a>
+        </div>
       </div>
     </div>
 
-    <div class="card">
-      <div class="card-img"></div>
-      <div class="card-content">
-        <div class="card-title">Polity Test 01</div>
-        <div class="card-desc">भारतीय राजनीति के बेसिक प्रश्नों की टेस्ट सीरीज।</div>
-        <a href="#" class="card-btn">Start Test</a>
+  <!-- 🔒 LOCKED TEST -->
+    <div class="card locked">
+      <div class="blur-content">
+        <div class="card-img"></div>
+        <div class="card-content">
+          <div class="card-title">Test 03</div>
+          <div class="card-desc">पटवारी भर्ती परीक्षा 2025 टेस्ट।</div>
+          <a href="#" class="card-btn">Start Test</a>
+        </div>
       </div>
     </div>
 
-    <!-- Add more cards as needed -->
+    <!-- 🔒 LOCKED TEST -->
+    <div class="card locked">
+      <div class="blur-content">
+        <div class="card-img"></div>
+        <div class="card-content">
+          <div class="card-title">Test 04</div>
+          <div class="card-desc">पटवारी भर्ती परीक्षा 2025 टेस्ट।</div>
+          <a href="#" class="card-btn">Start Test</a>
+        </div>
+      </div>
+    </div>
 
-  </div>
-</body>
-</html>
+<!-- 🔒 LOCKED TEST -->
+    <div class="card locked">
+      <div class="blur-content">
+        <div class="card-img"></div>
+        <div class="card-content">
+          <div class="card-title">Test 05</div>
+          <div class="card-desc">पटवारी भर्ती परीक्षा 2025 टेस्ट।</div>
+          <a href="#" class="card-btn">Start Test</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🔒 LOCKED TEST -->
+    <div class="card locked">
+      <div class="blur-content">
+        <div class="card-img"></div>
+        <div class="card-content">
+          <div class="card-title">Test06</div>
+          <div class="card-desc">पटवारी भर्ती परीक्षा 2025 टेस्ट।</div>
+          <a href="#" class="card-btn">Start Test</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 🔒 LOCKED TEST -->
+    <div class="card locked">
+      <div class="blur-content">
+        <div class="card-img"></div>
+        <div class="card-content">
+          <div class="card-title">Test 07</div>
+          <div class="card-desc">पटवार भर्ती परीक्षा 2025 सीरीज 2025</div>
+          <a href="#" class="card-btn">Start Test</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🔒 LOCKED TEST -->
+    <div class="card locked">
+      <div class="blur-content">
+        <div class="card-img"></div>
+        <div class="card-content">
+          <div class="card-title">Test 08</div>
+          <div class="card-desc">पटवार भर्ती परीक्षा 2025</div>
+          <a href="#" class="card-btn">Start Test</a>
+        </div>
+      </div>
+    </div>
+
+  <!-- 🔒 LOCKED TEST -->
+    <div class="card locked">
+      <div class="blur-content">
+        <div class="card-img"></div>
+        <div class="card-content">
+          <div class="card-title">Test 09</div>
+          <div class="card-desc">पटवार भर्ती परीक्षा 2025</div>
+          <a href="#" class="card-btn">Start Test</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🔒 LOCKED TEST -->
+    <div class="card locked">
+      <div class="blur-content">
+        <div class="card-img"></div>
+        <div class="card-content">
+          <div class="card-title">Test 10</div>
+          <div class="card-desc">पटवार भर्ती परीक्षा 2025</div>
+          <a href="#" class="card-btn">Start Test</a>
+        </div>
+      </div>
+    </div>
+
+  <!-- 🔒 LOCKED TEST -->
+    <div class="card locked">
+      <div class="blur-content">
+        <div class="card-img"></div>
+        <div class="card-content">
+          <div class="card-title">Test 11</div>
+          <div class="card-desc">पटवार भर्ती परीक्षा 2025</div>
+          <a href="#" class="card-btn">Start Test</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🔒 LOCKED TEST -->
+    <div class="card locked">
+      <div class="blur-content">
+        <div class="card-img"></div>
+        <div class="card-content">
+          <div class="card-title">Test 12</div>
+          <div class="card-desc">पटवार भर्ती परीक्षा 2025</div>
+          <a href="#" class="card-btn">Start Test</a>
+        </div>
+      </div>
+</div>
