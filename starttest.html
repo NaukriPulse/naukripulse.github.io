@@ -1,33 +1,28 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html>
 <head>
   <meta charset="UTF-8">
   <title>Test Series</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f1f1f1;
+      background-color: #f1f1f1;
       margin: 0;
       padding: 0;
     }
 
     .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+      padding: 10px;
     }
 
     .card {
-      background: #fff;
+      background-color: white;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
       overflow: hidden;
-      transition: transform 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
     }
 
     .card img {
@@ -36,133 +31,104 @@
       display: block;
     }
 
-    .card-content {
+    .card h3 {
       padding: 15px;
-      text-align: center;
-    }
-
-    .card-content h2 {
       font-size: 20px;
-      margin: 10px 0;
+      margin: 0;
     }
 
-    .card-content button {
-      background: #007bff;
+    .card button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
       color: white;
       border: none;
-      padding: 12px 24px;
+      border-top: 1px solid #eee;
       font-size: 16px;
-      border-radius: 6px;
       cursor: pointer;
-      margin-top: 10px;
     }
 
-    .card-content button:hover {
-      background: #0056b3;
+    .card button:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
 <body>
-
   <div class="container">
-    <!-- Repeat for 12 Cards -->
-    <!-- Card 1 to 12 -->
+    
+    <!-- Repeat this card 12 times with different test names -->
     <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <div class="card-content">
-        <h2>Test 1</h2>
-        <button>Start Test</button>
-      </div>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm6srhy_m9K7e4KGluwQ5pgKpQMW-KxjTI4nJ2FFdNw5rt_TVjqdgjxmApbbWeQKfm-g7QNyThnVvPQ9OecncQbLKtwxY2qvIoswjtUc5AUm1HwabZe5B1wQUfPxbLc4xTZF8dN6R1LkZ4P5adlqLHWWZSCfhk46-pbQPLU3mw-Tbaqbw1xf0IvOdhq14/s400/1000379309.jpg" alt="Test Image">
+      <h3>Test 1 - Rajasthan GK</h3>
+      <button onclick="location.href='test1.html'">Start Test</button>
     </div>
 
     <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <div class="card-content">
-        <h2>Test 2</h2>
-        <button>Start Test</button>
-      </div>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm6srhy_m9K7e4KGluwQ5pgKpQMW-KxjTI4nJ2FFdNw5rt_TVjqdgjxmApbbWeQKfm-g7QNyThnVvPQ9OecncQbLKtwxY2qvIoswjtUc5AUm1HwabZe5B1wQUfPxbLc4xTZF8dN6R1LkZ4P5adlqLHWWZSCfhk46-pbQPLU3mw-Tbaqbw1xf0IvOdhq14/s400/1000379309.jpg" alt="Test Image">
+      <h3>Test 2 - Indian Polity</h3>
+      <button onclick="location.href='test2.html'">Start Test</button>
     </div>
 
     <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <div class="card-content">
-        <h2>Test 3</h2>
-        <button>Start Test</button>
-      </div>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm6srhy_m9K7e4KGluwQ5pgKpQMW-KxjTI4nJ2FFdNw5rt_TVjqdgjxmApbbWeQKfm-g7QNyThnVvPQ9OecncQbLKtwxY2qvIoswjtUc5AUm1HwabZe5B1wQUfPxbLc4xTZF8dN6R1LkZ4P5adlqLHWWZSCfhk46-pbQPLU3mw-Tbaqbw1xf0IvOdhq14/s400/1000379309.jpg" alt="Test Image">
+      <h3>Test 3 - Indian History</h3>
+      <button onclick="location.href='test3.html'">Start Test</button>
     </div>
 
     <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <div class="card-content">
-        <h2>Test 4</h2>
-        <button>Start Test</button>
-      </div>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm6srhy_m9K7e4KGluwQ5pgKpQMW-KxjTI4nJ2FFdNw5rt_TVjqdgjxmApbbWeQKfm-g7QNyThnVvPQ9OecncQbLKtwxY2qvIoswjtUc5AUm1HwabZe5B1wQUfPxbLc4xTZF8dN6R1LkZ4P5adlqLHWWZSCfhk46-pbQPLU3mw-Tbaqbw1xf0IvOdhq14/s400/1000379309.jpg" alt="Test Image">
+      <h3>Test 4 - Geography</h3>
+      <button onclick="location.href='test4.html'">Start Test</button>
     </div>
 
     <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <div class="card-content">
-        <h2>Test 5</h2>
-        <button>Start Test</button>
-      </div>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm6srhy_m9K7e4KGluwQ5pgKpQMW-KxjTI4nJ2FFdNw5rt_TVjqdgjxmApbbWeQKfm-g7QNyThnVvPQ9OecncQbLKtwxY2qvIoswjtUc5AUm1HwabZe5B1wQUfPxbLc4xTZF8dN6R1LkZ4P5adlqLHWWZSCfhk46-pbQPLU3mw-Tbaqbw1xf0IvOdhq14/s400/1000379309.jpg" alt="Test Image">
+      <h3>Test 5 - Computer</h3>
+      <button onclick="location.href='test5.html'">Start Test</button>
     </div>
 
     <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <div class="card-content">
-        <h2>Test 6</h2>
-        <button>Start Test</button>
-      </div>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm6srhy_m9K7e4KGluwQ5pgKpQMW-KxjTI4nJ2FFdNw5rt_TVjqdgjxmApbbWeQKfm-g7QNyThnVvPQ9OecncQbLKtwxY2qvIoswjtUc5AUm1HwabZe5B1wQUfPxbLc4xTZF8dN6R1LkZ4P5adlqLHWWZSCfhk46-pbQPLU3mw-Tbaqbw1xf0IvOdhq14/s400/1000379309.jpg" alt="Test Image">
+      <h3>Test 6 - Current Affairs</h3>
+      <button onclick="location.href='test6.html'">Start Test</button>
     </div>
 
     <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <div class="card-content">
-        <h2>Test 7</h2>
-        <button>Start Test</button>
-      </div>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm6srhy_m9K7e4KGluwQ5pgKpQMW-KxjTI4nJ2FFdNw5rt_TVjqdgjxmApbbWeQKfm-g7QNyThnVvPQ9OecncQbLKtwxY2qvIoswjtUc5AUm1HwabZe5B1wQUfPxbLc4xTZF8dN6R1LkZ4P5adlqLHWWZSCfhk46-pbQPLU3mw-Tbaqbw1xf0IvOdhq14/s400/1000379309.jpg" alt="Test Image">
+      <h3>Test 7 - Science</h3>
+      <button onclick="location.href='test7.html'">Start Test</button>
     </div>
 
     <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <div class="card-content">
-        <h2>Test 8</h2>
-        <button>Start Test</button>
-      </div>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm6srhy_m9K7e4KGluwQ5pgKpQMW-KxjTI4nJ2FFdNw5rt_TVjqdgjxmApbbWeQKfm-g7QNyThnVvPQ9OecncQbLKtwxY2qvIoswjtUc5AUm1HwabZe5B1wQUfPxbLc4xTZF8dN6R1LkZ4P5adlqLHWWZSCfhk46-pbQPLU3mw-Tbaqbw1xf0IvOdhq14/s400/1000379309.jpg" alt="Test Image">
+      <h3>Test 8 - English Grammar</h3>
+      <button onclick="location.href='test8.html'">Start Test</button>
     </div>
 
     <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <div class="card-content">
-        <h2>Test 9</h2>
-        <button>Start Test</button>
-      </div>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm6srhy_m9K7e4KGluwQ5pgKpQMW-KxjTI4nJ2FFdNw5rt_TVjqdgjxmApbbWeQKfm-g7QNyThnVvPQ9OecncQbLKtwxY2qvIoswjtUc5AUm1HwabZe5B1wQUfPxbLc4xTZF8dN6R1LkZ4P5adlqLHWWZSCfhk46-pbQPLU3mw-Tbaqbw1xf0IvOdhq14/s400/1000379309.jpg" alt="Test Image">
+      <h3>Test 9 - Hindi Grammar</h3>
+      <button onclick="location.href='test9.html'">Start Test</button>
     </div>
 
     <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <div class="card-content">
-        <h2>Test 10</h2>
-        <button>Start Test</button>
-      </div>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm6srhy_m9K7e4KGluwQ5pgKpQMW-KxjTI4nJ2FFdNw5rt_TVjqdgjxmApbbWeQKfm-g7QNyThnVvPQ9OecncQbLKtwxY2qvIoswjtUc5AUm1HwabZe5B1wQUfPxbLc4xTZF8dN6R1LkZ4P5adlqLHWWZSCfhk46-pbQPLU3mw-Tbaqbw1xf0IvOdhq14/s400/1000379309.jpg" alt="Test Image">
+      <h3>Test 10 - Economics</h3>
+      <button onclick="location.href='test10.html'">Start Test</button>
     </div>
 
     <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <div class="card-content">
-        <h2>Test 11</h2>
-        <button>Start Test</button>
-      </div>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm6srhy_m9K7e4KGluwQ5pgKpQMW-KxjTI4nJ2FFdNw5rt_TVjqdgjxmApbbWeQKfm-g7QNyThnVvPQ9OecncQbLKtwxY2qvIoswjtUc5AUm1HwabZe5B1wQUfPxbLc4xTZF8dN6R1LkZ4P5adlqLHWWZSCfhk46-pbQPLU3mw-Tbaqbw1xf0IvOdhq14/s400/1000379309.jpg" alt="Test Image">
+      <h3>Test 11 - Reasoning</h3>
+      <button onclick="location.href='test11.html'">Start Test</button>
     </div>
 
     <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <div class="card-content">
-        <h2>Test 12</h2>
-        <button>Start Test</button>
-      </div>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm6srhy_m9K7e4KGluwQ5pgKpQMW-KxjTI4nJ2FFdNw5rt_TVjqdgjxmApbbWeQKfm-g7QNyThnVvPQ9OecncQbLKtwxY2qvIoswjtUc5AUm1HwabZe5B1wQUfPxbLc4xTZF8dN6R1LkZ4P5adlqLHWWZSCfhk46-pbQPLU3mw-Tbaqbw1xf0IvOdhq14/s400/1000379309.jpg" alt="Test Image">
+      <h3>Test 12 - Maths</h3>
+      <button onclick="location.href='test12.html'">Start Test</button>
     </div>
+
   </div>
-
 </body>
 </html>
