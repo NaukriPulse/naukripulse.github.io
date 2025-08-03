@@ -1,146 +1,234 @@
+<div style="max-width: 800px; margin: 50px auto; padding: 30px 40px; border-left: 6px solid #004080; background: #fdfdfd; box-shadow: 0 6px 20px rgba(0,0,0,0.1); border-radius: 12px; font-family: 'Segoe UI', sans-serif;">
+  <h1 style="margin: 0 0 10px 0; color: #004080; font-size: 2.2rem; font-weight: 700; text-align: center;">
+    📘 NAUKRI PULSE <span style="color:#c00;">FREE Online Test Series</span>
+  </h1>
+  <hr style="border: none; height: 2px; background: linear-gradient(to right, #004080, #c00); margin: 10px auto 30px; width: 80%;">
+  <p style="text-align: center; font-size: 1.2rem; color: #111; font-weight: 600; line-height: 1.7;">
+    इस साल हो जाओ तैयार क्योंकि ऐसी नौकरियां अब दोबारा नहीं आने वाली। ऊपर दिए ⤴️ गए बटन से हमारे व्हाट्सएप ग्रुप से जुड़ जाइए क्योंकि सारी जरूरी सूचनाओं ग्रुप में ही दी जाएगी और दीजिए रोज ऑनलाइन टेस्ट सीरीज़ हमारे साथ— <br>
+    "NAUKRI PULSE" जहाँ तैयारी हो सफलता की गारंटी के साथ।
+  </p>
+  <p style="text-align: center; font-size: 1.2rem; color: #c00; font-weight: 700; margin-top: 20px;">
+    🚀 अपने दोस्तों और परिवार जनों को यह जानकारी जरूर शेयर करें!
+  </p>
+</div>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Test Series</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Series Countdown</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .countdown-header {
+      background: linear-gradient(90deg, #005bea, #00c6fb);
       padding: 20px;
-      background: #f2f2f2;
-    }
-
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      overflow: hidden;
       text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: scale(1.03);
-    }
-
-    .card img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-    }
-
-    .card h3 {
-      margin: 10px 0;
-      font-size: 20px;
-      color: #333;
-    }
-
-    .start-btn {
-      display: inline-block;
-      margin: 12px auto 20px;
-      padding: 10px 20px;
-      background: #007bff;
       color: white;
-      border: none;
-      border-radius: 25px;
-      font-size: 18px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background 0.3s;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      position: relative;
+      z-index: 999;
     }
 
-    .start-btn:hover {
-      background: #0056b3;
+    .countdown-header h2 {
+      margin: 0 0 10px;
+      font-size: 24px;
+      letter-spacing: 0.5px;
+    }
+
+    .countdown-timer {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fffacd;
+      box-shadow: inset 0 0 5px rgba(255,255,255,0.3);
+      backdrop-filter: blur(6px);
+    }
+
+    .countdown-icon {
+      font-size: 28px;
+      vertical-align: middle;
+      margin-right: 10px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.2); opacity: 0.7; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @media (max-width: 600px) {
+      .countdown-header h2 {
+        font-size: 18px;
+      }
+      .countdown-timer {
+        font-size: 18px;
+        padding: 10px 20px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1 style="text-align:center; color:#222;">📚 Test Series</h1>
+  <!-- ✅ Stylish Countdown Banner -->
+  <div class="countdown-header">
+    <h2>📢 टेस्ट सीरीज़ शुरू हो चुकी है:</h2>
+    <div class="countdown-timer">
+      <span class="countdown-icon">⏳</span>
+      <span id="countdown">लोड हो रहा है...</span>
+    </div>
+  </div>
+  
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Naukri Pulse Test Series</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #111;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      margin: 20px 0;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .card-desc {
+      font-size: 16px;
+      color: #555;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #0066cc;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
   <div class="container">
 
-    <!-- 12 Test Cards -->
+    <!-- Updated Image for All Cards -->
     <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <h3>Test 1</h3>
-      <a href="#" class="start-btn">Start Test</a>
+      <div class="card-img">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLMfZRPVrSnuDA3ORA-GreEWLcPNTmy6aeD3XYxbPDYmLG8HDqTwA2KejHp8qqvyyCA629WEXBvRRIAZG4TVJ6Bfjl5cplo6VLjAYju6J9Rt5c8Fige9hhVXIRKEhjF4j2X9VkkaDX8J_TFj9Qmj5N_9rS9JHxJSJJWTp-BLt7K4LcXV9FiYj5RrwXhpA/s2545/1000380177.jpg" alt="Test Series Image" />
+      </div>
+      <div class="card-content">
+        <div class="card-title">Test 01</div>
+        <div class="card-desc" style="font-weight: bold; font-size: 18px;"> पटवार भर्ती परीक्षा Test series  2025।</div>
+        <a href="https://naukripulse.github.io/starttest.html" class="button">Give Test</a>
+      </div>
     </div>
 
     <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <h3>Test 2</h3>
-      <a href="#" class="start-btn">Start Test</a>
+      <div class="card-img">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLMfZRPVrSnuDA3ORA-GreEWLcPNTmy6aeD3XYxbPDYmLG8HDqTwA2KejHp8qqvyyCA629WEXBvRRIAZG4TVJ6Bfjl5cplo6VLjAYju6J9Rt5c8Fige9hhVXIRKEhjF4j2X9VkkaDX8J_TFj9Qmj5N_9rS9JHxJSJJWTp-BLt7K4LcXV9FiYj5RrwXhpA/s2545/1000380177.jpg" alt="Test Series Image" />
+      </div>
+      <div class="card-content">
+        <div class="card-title">Test 02</div>
+        <div class="card-desc" style="font-weight: bold; font-size: 18px;">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025।</div>
+        <a href="https://naukripulse.github.io/lock4thgrade.html" class="button">Give Test</a>
+      </div>
     </div>
 
     <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <h3>Test 3</h3>
-      <a href="#" class="start-btn">Start Test</a>
+      <div class="card-img">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLMfZRPVrSnuDA3ORA-GreEWLcPNTmy6aeD3XYxbPDYmLG8HDqTwA2KejHp8qqvyyCA629WEXBvRRIAZG4TVJ6Bfjl5cplo6VLjAYju6J9Rt5c8Fige9hhVXIRKEhjF4j2X9VkkaDX8J_TFj9Qmj5N_9rS9JHxJSJJWTp-BLt7K4LcXV9FiYj5RrwXhpA/s2545/1000380177.jpg" alt="Test Series Image" />
+      </div>
+      <div class="card-content">
+        <div class="card-title">Test 03</div>
+        <div class="card-desc" style="font-weight: bold; font-size: 18px;">Level 2 3rd Garde टेस्ट सीरीज 2025</div>
+        <a href="https://example.com/test3" class="button">Take Test</a>
+      </div>
     </div>
-
-    <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <h3>Test 4</h3>
-      <a href="#" class="start-btn">Start Test</a>
+  <div class="card">
+      <div class="card-img">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLMfZRPVrSnuDA3ORA-GreEWLcPNTmy6aeD3XYxbPDYmLG8HDqTwA2KejHp8qqvyyCA629WEXBvRRIAZG4TVJ6Bfjl5cplo6VLjAYju6J9Rt5c8Fige9hhVXIRKEhjF4j2X9VkkaDX8J_TFj9Qmj5N_9rS9JHxJSJJWTp-BLt7K4LcXV9FiYj5RrwXhpA/s2545/1000380177.jpg" alt="Test Series Image" />
+      </div>
+      <div class="card-content">
+        <div class="card-title">Test 03</div>
+        <div class="card-desc" style="font-weight: bold; font-size: 18px;">RAS PRE टेस्ट सीरीज 2025</div>
+        <a href="https://example.com/test3" class="button">🔐Take Test</a>
+      </div>
     </div>
-
-    <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <h3>Test 5</h3>
-      <a href="#" class="start-btn">Start Test</a>
+    
+      <div class="card">
+      <div class="card-img">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLMfZRPVrSnuDA3ORA-GreEWLcPNTmy6aeD3XYxbPDYmLG8HDqTwA2KejHp8qqvyyCA629WEXBvRRIAZG4TVJ6Bfjl5cplo6VLjAYju6J9Rt5c8Fige9hhVXIRKEhjF4j2X9VkkaDX8J_TFj9Qmj5N_9rS9JHxJSJJWTp-BLt7K4LcXV9FiYj5RrwXhpA/s2545/1000380177.jpg" alt="Test Series Image" />
+      </div>
+      <div class="card-content">
+        <div class="card-title">Test 03</div>
+        <div class="card-desc" style="font-weight: bold; font-size: 18px;">BSTC टेस्ट सीरीज 2025</div>
+        <a href="https://example.com/test3" class="button">🔐Take Test</a>
+      </div>
     </div>
-
-    <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <h3>Test 6</h3>
-      <a href="#" class="start-btn">Start Test</a>
+      <div class="card">
+      <div class="card-img">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLMfZRPVrSnuDA3ORA-GreEWLcPNTmy6aeD3XYxbPDYmLG8HDqTwA2KejHp8qqvyyCA629WEXBvRRIAZG4TVJ6Bfjl5cplo6VLjAYju6J9Rt5c8Fige9hhVXIRKEhjF4j2X9VkkaDX8J_TFj9Qmj5N_9rS9JHxJSJJWTp-BLt7K4LcXV9FiYj5RrwXhpA/s2545/1000380177.jpg" alt="Test Series Image" />
+      </div>
+      <div class="card-content">
+        <div class="card-title">Test 03</div>
+        <div class="card-desc" style="font-weight: bold; font-size: 18px;">राजस्थान CET टेस्ट सीरीज 2025</div>
+        <a href="https://example.com/test3" class="button">🔐Take Test</a>
+      </div>
     </div>
-
-    <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <h3>Test 7</h3>
-      <a href="#" class="start-btn">Start Test</a>
+    
+      <div class="card">
+      <div class="card-img">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLMfZRPVrSnuDA3ORA-GreEWLcPNTmy6aeD3XYxbPDYmLG8HDqTwA2KejHp8qqvyyCA629WEXBvRRIAZG4TVJ6Bfjl5cplo6VLjAYju6J9Rt5c8Fige9hhVXIRKEhjF4j2X9VkkaDX8J_TFj9Qmj5N_9rS9JHxJSJJWTp-BLt7K4LcXV9FiYj5RrwXhpA/s2545/1000380177.jpg" alt="Test Series Image" />
+      </div>
+      <div class="card-content">
+        <div class="card-title">Test 03</div>
+        <div class="card-desc" style="font-weight: bold; font-size: 18px;">राजस्थान agriculture supervisor टेस्ट सीरीज 2025</div>
+        <a href="https://example.com/test3" class="button">🔐Take Test</a>
+      </div>
     </div>
-
-    <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <h3>Test 8</h3>
-      <a href="#" class="start-btn">Start Test</a>
-    </div>
-
-    <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <h3>Test 9</h3>
-      <a href="#" class="start-btn">Start Test</a>
-    </div>
-
-    <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <h3>Test 10</h3>
-      <a href="#" class="start-btn">Start Test</a>
-    </div>
-
-    <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <h3>Test 11</h3>
-      <a href="#" class="start-btn">Start Test</a>
-    </div>
-
-    <div class="card">
-      <img src="test.jpg" alt="Test Image">
-      <h3>Test 12</h3>
-      <a href="#" class="start-btn">Start Test</a>
-    </div>
-
+    
+    
+    
   </div>
-
 </body>
 </html>
