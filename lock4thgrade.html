@@ -1,287 +1,255 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Naukri Pulse Test Series</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NAUKRI PULSE — Test Series (Test 01–11)</title>
+  <meta name="description" content="Naukri Pulse — चतुर्थ श्रेणी कर्मचारी ऑनलाइन टेस्ट सीरीज़ 2025. Test 01 से Test 11 तक—practice, revise और आगे बढ़ें." />
+  <meta name="robots" content="index,follow" />
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f5f5f5;
-      color: #111;
-      margin: 0;
-      padding: 0;
+    :root{
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --accent:#004080;
+      --accent-2:#c62828;
+      --btn:#007bff;
+      --text:#121417;
+      --muted:#555;
+      --radius:12px;
+      --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
     }
 
-    /* Header Section */
-    .hero {
-      padding: 30px 20px 20px;
-      background: #fdfdfd;
-      max-width: 1000px;
-      margin: 0 auto;
-      border-left: 6px solid #004080;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    /* Header / Hero */
+    .wrap{max-width:var(--maxw);margin:28px auto;padding:16px}
+    .hero{
+      background:var(--card);
+      border-left:6px solid var(--accent);
+      border-radius:var(--radius);
+      padding:22px;
+      box-shadow:0 8px 24px rgba(10,20,40,0.06);
+      display:flex;
+      gap:16px;
+      align-items:center;
+    }
+    .logo{
+      width:70px;height:70px;flex:0 0 70px;border-radius:10px;
+      display:flex;align-items:center;justify-content:center;
+      background:linear-gradient(180deg,var(--accent),#0a62b8);
+      color:#fff;font-weight:700;font-size:20px;
+      box-shadow:0 6px 18px rgba(0,64,128,0.12);
+    }
+    .hero-text h1{
+      margin:0;font-size:20px;color:var(--accent);letter-spacing:0.2px;
+    }
+    .hero-text p{margin:6px 0 0;color:var(--muted);font-weight:600}
+
+    /* Grid of cards */
+    .container{
+      max-width:var(--maxw);
+      margin:20px auto;
+      padding:0 12px 60px;
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+      gap:18px;
     }
 
-    .hero h1 {
-      margin: 0;
-      color: #004080;
-      font-size: 2.4rem;
-      font-weight: 700;
-      text-align: center;
+    .card{
+      background:var(--card);
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 6px 18px rgba(12,24,40,0.06);
+      display:flex;
+      flex-direction:column;
+      transition:transform .16s ease, box-shadow .16s ease;
+      min-height:320px;
     }
-
-    .hero hr {
-      border: none;
-      height: 2px;
-      background: linear-gradient(to right, #004080, #c00);
-      margin: 10px auto 30px;
-      width: 80%;
+    .card:hover{transform:translateY(-6px); box-shadow:0 14px 36px rgba(12,24,40,0.10)}
+    .thumb{
+      width:100%;
+      height:160px;
+      display:block;
+      object-fit:cover;
+      background:#ddd;
     }
-
-    .hero p {
-      text-align: center;
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: #111;
-      line-height: 1.6;
+    .card-body{padding:14px;display:flex;flex-direction:column;gap:10px;flex:1}
+    .title{font-size:1.05rem;font-weight:650;color:#0b3954}
+    .desc{font-size:0.95rem;color:var(--muted);flex:1}
+    .actions{margin-top:auto}
+    .btn{
+      display:inline-block;padding:10px 14px;border-radius:10px;background:var(--btn);
+      color:#fff;text-decoration:none;font-weight:600;
+      box-shadow:0 6px 16px rgba(0,123,255,0.12);
     }
+    .btn:active{transform:translateY(1px)}
+    .small{font-size:0.85rem;color:#666;margin-top:6px}
 
-    .hero p:last-child {
-      color: #c00;
-      font-weight: 700;
-      margin-top: 20px;
-    }
-
-    /* Cards Container */
-    .container {
-      max-width: 1100px;
-      margin: 30px auto;
-      padding: 0 10px 50px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 25px;
-    }
-
-    .card {
-      position: relative;
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      overflow: hidden;
-      transition: transform 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card-img {
-      height: 200px;
-      background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjmKIVlYD9GS3blBde0vi4e_yU83_cbo-KVUHOW7MAYvpvTcV8z3GFctj9lWI4XfHyVLkGKzBxmaRWSwsrOzUYY2iaQt3cNGOrJGg5tHyyTwUnnCoULmOmbjsqJjGFS92dCFW7KGqudrL2N4bg6UIfvvtxVAUZg7uN0-Upttg6C49uEsVMwj04xQ4efw/s1200/1000379608.jpg');
-      background-size: cover;
-      background-position: center;
-    }
-
-    .card-content {
-      padding: 16px;
-    }
-
-    .card-title {
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-
-    .card-desc {
-      font-size: 1rem;
-      color: #333;
-      margin-bottom: 12px;
-    }
-
-    .card-btn {
-      display: inline-block;
-      padding: 10px 16px;
-      background-color: #007bff;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: background 0.2s;
-    }
-
-    .card-btn:hover {
-      background-color: #0056b3;
-    }
-
-    /* Locked Card Style */
-    .locked .blur-content {
-      filter: blur(1.5px);
-      opacity: 0.5;
-      pointer-events: none;
-    }
-
-    .locked::after {
-      content: "🔒";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 5rem;
-      color: #ff0000;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.6), 0 0 20px yellow;
-      z-index: 3;
-      animation: pulse 1.5s infinite;
-    }
-
-    @keyframes pulse {
-      0% { transform: translate(-50%, -50%) scale(1); }
-      50% { transform: translate(-50%, -50%) scale(1.1); }
-      100% { transform: translate(-50%, -50%) scale(1); }
-    }
-
-    /* Responsive (Optional) */
-    @media(max-width: 768px) {
-      .container {
-        grid-template-columns: 1fr;
-      }
+    /* Responsive tweaks */
+    @media (max-width:720px){
+      .hero{flex-direction:row;gap:12px;padding:18px}
+      .logo{width:58px;height:58px}
     }
   </style>
 </head>
 <body>
 
-  <!-- Hero / Heading Section -->
-  <div class="hero">
-    <h1>📘 NAUKRI PULSE <span style="color:#c00;">Online Test Series</span></h1>
-    <hr />
-    <p>देश की सबसे भरोसेमंद और अद्वितीय ऑनलाइन टेस्ट सीरीज़ — <br>
-    जहाँ तैयारी हो सफलता की गारंटी के साथ।</p>
-    <p>🚀 Unlock 🔓 all premium test series — only ₹99!</p>
+  <div class="wrap">
+    <header class="hero" role="banner" aria-label="Naukri Pulse Test Series">
+      <div class="logo" aria-hidden="true">NP</div>
+      <div class="hero-text">
+        <h1>📘 NAUKRI PULSE — Online Test Series (Test 01–11)</h1>
+        <p>चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025 · सभी टेस्ट unlocked · fast & SEO friendly</p>
+      </div>
+    </header>
   </div>
 
-  <!-- Cards Grid Section -->
-  <div class="container">
+  <main class="container" role="main" aria-label="Test series list">
 
-    <!-- 👇 आपके द्वारा दिए गए सारे Cards नीचे वैसे ही paste कर दें -->
-    <!-- ✅ FREE TEST -->
-    <div class="card">
-      <div class="card-img"></div>
-      <div class="card-content">
-        <div class="card-title">Test 01</div>
-        <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025।</div>
-        <a href="https://naukripulse.github.io/4thgradeTEST8001.html" class="card-btn">Start Test</a>
-      </div>
-    </div>
-
-     <!--  LOCKED TEST -->
-        <div class="card-img"></div>
-        <div class="card-content">
-          <div class="card-title">Test 02</div>
-          <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</div>
-          <a href="https://naukripulse.github.io/testseries/TEST_8002.html" class="card-btn">Start Test</a>
+    <!-- Test 01 -->
+    <article class="card" aria-labelledby="t1">
+      <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjmKIVlYD9GS3blBde0vi4e_yU83_cbo-KVUHOW7MAYvpvTcV8z3GFctj9lWI4XfHyVLkGKzBxmaRWSwsrOzUYY2iaQt3cNGOrJGg5tHyyTwUnnCoULmOmbjsqJjGFS92dCFW7KGqudrL2N4bg6UIfvvtxVAUZg7uN0-Upttg6C49uEsVMwj04xQ4efw/s1200/1000379608.jpg" alt="Test 01 thumbnail" loading="lazy">
+      <div class="card-body">
+        <h2 id="t1" class="title">Test 01</h2>
+        <p class="desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025।</p>
+        <div class="actions">
+          <a class="btn" href="https://naukripulse.github.io/4thgradeTEST8001.html" target="_blank" rel="noopener">Start Test</a>
+          <div class="small"></div>
         </div>
       </div>
-    </div>
+    </article>
 
-    <!--  LOCKED TEST -->
-   
-        <div class="card-img"></div>
-        <div class="card-content">
-          <div class="card-title">Test 03</div>
-          <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</div>
-          <a href="https://naukripulse.github.io/testseries/TEST_8003.html.html" class="card-btn">Start Test</a>
+    <!-- Test 02 -->
+    <article class="card" aria-labelledby="t2">
+      <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjmKIVlYD9GS3blBde0vi4e_yU83_cbo-KVUHOW7MAYvpvTcV8z3GFctj9lWI4XfHyVLkGKzBxmaRWSwsrOzUYY2iaQt3cNGOrJGg5tHyyTwUnnCoULmOmbjsqJjGFS92dCFW7KGqudrL2N4bg6UIfvvtxVAUZg7uN0-Upttg6C49uEsVMwj04xQ4efw/s1200/1000379608.jpg" alt="Test 02 thumbnail" loading="lazy">
+      <div class="card-body">
+        <h2 id="t2" class="title">Test 02</h2>
+        <p class="desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025</p>
+        <div class="actions">
+          <a class="btn" href="https://naukripulse.github.io/testseries/TEST_8002.html" target="_blank" rel="noopener">Start Test</a>
+          <div class="small"></div>
         </div>
       </div>
-    </div>
+    </article>
 
-  <!--  LOCKED TEST -->
-    
-        <div class="card-img"></div>
-        <div class="card-content">
-          <div class="card-title">Test 04</div>
-          <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025।</div>
-          <a href="https://naukripulse.github.io/testseries/TEST_8004.html.html" class="card-btn">Start Test</a>
+    <!-- Test 03 (fixed .html typo) -->
+    <article class="card" aria-labelledby="t3">
+      <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjmKIVlYD9GS3blBde0vi4e_yU83_cbo-KVUHOW7MAYvpvTcV8z3GFctj9lWI4XfHyVLkGKzBxmaRWSwsrOzUYY2iaQt3cNGOrJGg5tHyyTwUnnCoULmOmbjsqJjGFS92dCFW7KGqudrL2N4bg6UIfvvtxVAUZg7uN0-Upttg6C49uEsVMwj04xQ4efw/s1200/1000379608.jpg" alt="Test 03 thumbnail" loading="lazy">
+      <div class="card-body">
+        <h2 id="t3" class="title">Test 03</h2>
+        <p class="desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025</p>
+        <div class="actions">
+          <a class="btn" href="https://naukripulse.github.io/testseries/TEST_8003.html" target="_blank" rel="noopener">Start Test</a>
+          <div class="small"></div>
         </div>
       </div>
-    </div>
+    </article>
 
-    <!--  LOCKED TEST -->
-   
-        <div class="card-img"></div>
-        <div class="card-content">
-          <div class="card-title">Test 05</div>
-          <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</div>
-          <a href="https://naukripulse.github.io/testseries/TEST_8005.html" class="card-btn">Start Test</a>
+    <!-- Test 04 (fixed .html typo) -->
+    <article class="card" aria-labelledby="t4">
+      <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjmKIVlYD9GS3blBde0vi4e_yU83_cbo-KVUHOW7MAYvpvTcV8z3GFctj9lWI4XfHyVLkGKzBxmaRWSwsrOzUYY2iaQt3cNGOrJGg5tHyyTwUnnCoULmOmbjsqJjGFS92dCFW7KGqudrL2N4bg6UIfvvtxVAUZg7uN0-Upttg6C49uEsVMwj04xQ4efw/s1200/1000379608.jpg" alt="Test 04 thumbnail" loading="lazy">
+      <div class="card-body">
+        <h2 id="t4" class="title">Test 04</h2>
+        <p class="desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025।</p>
+        <div class="actions">
+          <a class="btn" href="https://naukripulse.github.io/testseries/TEST_8004.html" target="_blank" rel="noopener">Start Test</a>
         </div>
       </div>
-    </div>
+    </article>
 
-  <!--  LOCKED TEST -->
-    
-        <div class="card-img"></div>
-        <div class="card-content">
-          <div class="card-title">Test 06</div>
-          <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025।</div>
-          <a href="https://naukripulse.github.io/testseries/TEST_8006.html" class="card-btn">Start Test</a>
+    <!-- Test 05 -->
+    <article class="card" aria-labelledby="t5">
+      <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjmKIVlYD9GS3blBde0vi4e_yU83_cbo-KVUHOW7MAYvpvTcV8z3GFctj9lWI4XfHyVLkGKzBxmaRWSwsrOzUYY2iaQt3cNGOrJGg5tHyyTwUnnCoULmOmbjsqJjGFS92dCFW7KGqudrL2N4bg6UIfvvtxVAUZg7uN0-Upttg6C49uEsVMwj04xQ4efw/s1200/1000379608.jpg" alt="Test 05 thumbnail" loading="lazy">
+      <div class="card-body">
+        <h2 id="t5" class="title">Test 05</h2>
+        <p class="desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025</p>
+        <div class="actions">
+          <a class="btn" href="https://naukripulse.github.io/testseries/TEST_8005.html" target="_blank" rel="noopener">Start Test</a>
         </div>
       </div>
-    </div>
+    </article>
 
-    <!--  LOCKED TEST -->
-   
-        <div class="card-img"></div>
-        <div class="card-content">
-          <div class="card-title">Test 07</div>
-          <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</div>
-          <a href="https://naukripulse.github.io/testseries/TEST_8007.html" class="card-btn">Start Test</a>
+    <!-- Test 06 -->
+    <article class="card" aria-labelledby="t6">
+      <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjmKIVlYD9GS3blBde0vi4e_yU83_cbo-KVUHOW7MAYvpvTcV8z3GFctj9lWI4XfHyVLkGKzBxmaRWSwsrOzUYY2iaQt3cNGOrJGg5tHyyTwUnnCoULmOmbjsqJjGFS92dCFW7KGqudrL2N4bg6UIfvvtxVAUZg7uN0-Upttg6C49uEsVMwj04xQ4efw/s1200/1000379608.jpg" alt="Test 06 thumbnail" loading="lazy">
+      <div class="card-body">
+        <h2 id="t6" class="title">Test 06</h2>
+        <p class="desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025।</p>
+        <div class="actions">
+          <a class="btn" href="https://naukripulse.github.io/testseries/TEST_8006.html" target="_blank" rel="noopener">Start Test</a>
         </div>
       </div>
-    </div>
+    </article>
 
-  <!--  LOCKED TEST -->
-        <div class="card-img"></div>
-        <div class="card-content">
-          <div class="card-title"> Test 08</div>
-          <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</div>
-          <a href="https://naukripulse.github.io/testseries/TEST_8008.html" class="card-btn">Start Test</a>
+    <!-- Test 07 -->
+    <article class="card" aria-labelledby="t7">
+      <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjmKIVlYD9GS3blBde0vi4e_yU83_cbo-KVUHOW7MAYvpvTcV8z3GFctj9lWI4XfHyVLkGKzBxmaRWSwsrOzUYY2iaQt3cNGOrJGg5tHyyTwUnnCoULmOmbjsqJjGFS92dCFW7KGqudrL2N4bg6UIfvvtxVAUZg7uN0-Upttg6C49uEsVMwj04xQ4efw/s1200/1000379608.jpg" alt="Test 07 thumbnail" loading="lazy">
+      <div class="card-body">
+        <h2 id="t7" class="title">Test 07</h2>
+        <p class="desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025</p>
+        <div class="actions">
+          <a class="btn" href="https://naukripulse.github.io/testseries/TEST_8007.html" target="_blank" rel="noopener">Start Test</a>
         </div>
       </div>
-    </div>
+    </article>
 
-    <!--  LOCKED TEST -->
-        <div class="card-img"></div>
-        <div class="card-content">
-          <div class="card-title"> Test 09</div>
-          <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</div>
-          <a href="https://naukripulse.github.io/testseries/TEST_8009.html" class="card-btn">Start Test</a>
+    <!-- Test 08 -->
+    <article class="card" aria-labelledby="t8">
+      <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjmKIVlYD9GS3blBde0vi4e_yU83_cbo-KVUHOW7MAYvpvTcV8z3GFctj9lWI4XfHyVLkGKzBxmaRWSwsrOzUYY2iaQt3cNGOrJGg5tHyyTwUnnCoULmOmbjsqJjGFS92dCFW7KGqudrL2N4bg6UIfvvtxVAUZg7uN0-Upttg6C49uEsVMwj04xQ4efw/s1200/1000379608.jpg" alt="Test 08 thumbnail" loading="lazy">
+      <div class="card-body">
+        <h2 id="t8" class="title">Test 08</h2>
+        <p class="desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025</p>
+        <div class="actions">
+          <a class="btn" href="https://naukripulse.github.io/testseries/TEST_8008.html" target="_blank" rel="noopener">Start Test</a>
         </div>
       </div>
-    </div>
+    </article>
 
-  <!-- 🔒 UNLOCKED TEST -->
-   
-        <div class="card-img"></div>
-        <div class="card-content">
-          <div class="card-title">Test 10</div>
-          <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</div>
-          <a href="https://naukripulse.github.io/testseries/TEST_8010.html" class="card-btn">Start Test</a>
+    <!-- Test 09 -->
+    <article class="card" aria-labelledby="t9">
+      <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjmKIVlYD9GS3blBde0vi4e_yU83_cbo-KVUHOW7MAYvpvTcV8z3GFctj9lWI4XfHyVLkGKzBxmaRWSwsrOzUYY2iaQt3cNGOrJGg5tHyyTwUnnCoULmOmbjsqJjGFS92dCFW7KGqudrL2N4bg6UIfvvtxVAUZg7uN0-Upttg6C49uEsVMwj04xQ4efw/s1200/1000379608.jpg" alt="Test 09 thumbnail" loading="lazy">
+      <div class="card-body">
+        <h2 id="t9" class="title">Test 09</h2>
+        <p class="desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025</p>
+        <div class="actions">
+          <a class="btn" href="https://naukripulse.github.io/testseries/TEST_8009.html" target="_blank" rel="noopener">Start Test</a>
         </div>
       </div>
-    </div>
+    </article>
 
-    <!-- 🔒 UNLOCKED TEST -->
-    
-        <div class="card-img"></div>
-        <div class="card-content">
-          <div class="card-title"> Test 11</div>
-          <div class="card-desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज 2025</div>
-          <a href="https://naukripulse.github.io/testseries/TEST_8011.html" class="card-btn">Start Test</a>
+    <!-- Test 10 -->
+    <article class="card" aria-labelledby="t10">
+      <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjmKIVlYD9GS3blBde0vi4e_yU83_cbo-KVUHOW7MAYvpvTcV8z3GFctj9lWI4XfHyVLkGKzBxmaRWSwsrOzUYY2iaQt3cNGOrJGg5tHyyTwUnnCoULmOmbjsqJjGFS92dCFW7KGqudrL2N4bg6UIfvvtxVAUZg7uN0-Upttg6C49uEsVMwj04xQ4efw/s1200/1000379608.jpg" alt="Test 10 thumbnail" loading="lazy">
+      <div class="card-body">
+        <h2 id="t10" class="title">Test 10</h2>
+        <p class="desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025</p>
+        <div class="actions">
+          <a class="btn" href="https://naukripulse.github.io/testseries/TEST_8010.html" target="_blank" rel="noopener">Start Test</a>
         </div>
       </div>
-    </div>
-    
+    </article>
 
-  </div>
+    <!-- Test 11 -->
+    <article class="card" aria-labelledby="t11">
+      <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjmKIVlYD9GS3blBde0vi4e_yU83_cbo-KVUHOW7MAYvpvTcV8z3GFctj9lWI4XfHyVLkGKzBxmaRWSwsrOzUYY2iaQt3cNGOrJGg5tHyyTwUnnCoULmOmbjsqJjGFS92dCFW7KGqudrL2N4bg6UIfvvtxVAUZg7uN0-Upttg6C49uEsVMwj04xQ4efw/s1200/1000379608.jpg" alt="Test 11 thumbnail" loading="lazy">
+      <div class="card-body">
+        <h2 id="t11" class="title">Test 11</h2>
+        <p class="desc">चतुर्थ श्रेणी कर्मचारी टेस्ट सीरीज़ 2025</p>
+        <div class="actions">
+          <a class="btn" href="https://naukripulse.github.io/testseries/TEST_8011.html" target="_blank" rel="noopener">Start Test</a>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
 </body>
 </html>
