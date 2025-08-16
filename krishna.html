@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Krishna Janmashtami</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 10px;
+    }
+    .card {
+      margin: 20px auto;
+      width: 95%;
+      max-width: 800px;
+      padding: 20px;
+      background: linear-gradient(135deg,#ffecd2,#fcb69f);
+      border-radius: 20px;
+      box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+      box-sizing: border-box;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      margin: 15px 0;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+    }
+    .card h2 {
+      color: #e63946;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    .card p {
+      color: #1d3557;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .card h3 {
+      color: #457b9d;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    .card .footer {
+      color: #6a0572;
+      font-size: 16px;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    /* Countdown style */
+    .countdown {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #1d3557;
+      background: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    /* Falling Flowers */
+    .flower {
+      position: fixed;
+      top: -50px;
+      font-size: 1.8rem;
+      pointer-events: none;
+      animation: fall linear forwards;
+    }
+    @keyframes fall {
+      to {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>✨🌸 Naukri Pulse परिवार को कृष्णा जन्माष्टमी की हार्दिक शुभकामनाएँ 🌸✨</h2>
+
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMGB1HlzJebYJCXh42y_PgeyG9KON8KXzu-AoEtRYPutfE6UvS6Deh0IR26LD0FMEN9pINJZXWe8pcJGjvWN53soXCWgDYceDLv_du5jsD5PWSeFnS2rusWXrflTKV1tN8oDgiktszCsBsD9t8cN9sk4jkRIA1CWx7SL8ul1ttaN5zDitXgOmQYTxtK6w/s1600/1000394306.webp" alt="Lord Krishna">
+
+    <p>
+      🌟 आप सभी ग्रुप के सदस्यों का दिल से आभार 🌟<br>  
+      💐 आपकी मेहनत, लगन और सपने यूं ही चमकते रहें 💐<br>  
+      📚 हर दिन नई सफलता मिले, और आपके जीवन में <br>  
+      🌈 खुशियों की बरसात होती रहे 🌈  
+    </p>
+
+    <h3>🚀 आपकी सफलता ही हमारी सबसे बड़ी कामना है 🚀</h3>
+    <div class="footer">💖 – Naukri Pulse टीम की ओर से 💖</div>
+
+    <!-- Countdown -->
+    <div class="countdown">
+      यह पेज <span id="timer">7</span> सेकंड में Redirect हो जाएगा...
+    </div>
+  </div>
+
+  <!-- Flowers Falling Script -->
+  <script>
+    const flowers = ["🌼","🌻","🌺","🌹","🍁"];
+    function createFlower() {
+      const flower = document.createElement("div");
+      flower.className = "flower";
+      flower.textContent = flowers[Math.floor(Math.random() * flowers.length)];
+      flower.style.left = Math.random() * 100 + "vw";
+      flower.style.animationDuration = (Math.random() * 3 + 4) + "s";
+      document.body.appendChild(flower);
+      flower.addEventListener("animationend", () => flower.remove());
+    }
+    setInterval(createFlower, 500);
+
+    // Countdown + Redirect
+    let timeLeft = 7;
+    const timerEl = document.getElementById("timer");
+    const countdown = setInterval(() => {
+      timeLeft--;
+      timerEl.textContent = timeLeft;
+      if (timeLeft <= 0) {
+        clearInterval(countdown);
+        window.location.href = "https://naukripulse.blogspot.com";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
