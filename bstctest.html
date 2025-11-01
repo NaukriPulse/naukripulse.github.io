@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Naukari Plus — Premium Test Series</title>
+  <style>
+    :root{
+      --bg:#000;
+      --card:#0f1720;
+      --accent:#00ff66;
+      --muted:#9aa4a6;
+      --glass: rgba(255,255,255,0.03);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background: radial-gradient(circle at 10% 10%, #00220a 0%, #000 45%);
+      color:#fff;
+      font-family: "Poppins", system-ui, Arial;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.4;
+    }
+    header{
+      padding:22px 18px;
+      text-align:center;
+      border-bottom:1px solid rgba(0,255,102,0.06);
+      box-shadow:0 8px 30px rgba(0,0,0,0.6);
+      position:sticky;
+      top:0;
+      background:linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.25));
+      z-index:10;
+    }
+    header h1{
+      margin:0;
+      font-size:20px;
+      letter-spacing:1px;
+      color:#000;
+      display:inline-block;
+      padding:10px 16px;
+      background:linear-gradient(90deg,var(--accent),#00cc88);
+      border-radius:10px;
+    }
+    header p{
+      margin:8px 0 0;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .container{
+      max-width:980px;
+      margin:28px auto;
+      padding:0 16px 60px;
+    }
+    .hero{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      justify-content:center;
+      flex-wrap:wrap;
+      margin-bottom:18px;
+    }
+    .hero img{
+      width:100%;
+      max-width:420px;
+      border-radius:14px;
+      box-shadow:0 10px 40px rgba(0,255,102,0.08);
+      border:1px solid rgba(0,255,102,0.06);
+    }
+    .hero .blurb{
+      max-width:480px;
+      text-align:left;
+      padding:14px 16px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.03);
+      box-shadow:0 6px 30px rgba(0,0,0,0.6);
+    }
+    .hero .blurb h2{
+      margin:0 0 6px;
+      color:var(--accent);
+      font-size:18px;
+      letter-spacing:0.6px;
+    }
+    .hero .blurb p{margin:0;color:var(--muted);font-size:14px}
+    .section-title{
+      display:inline-block;
+      padding:8px 14px;
+      margin:26px 0 10px;
+      color:var(--accent);
+      background:rgba(0,255,102,0.03);
+      border-radius:10px;
+      border:1px solid rgba(0,255,102,0.06);
+      font-weight:600;
+      letter-spacing:0.6px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+      gap:18px;
+      margin-top:12px;
+    }
+
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.025), rgba(255,255,255,0.01));
+      border-radius:14px;
+      padding:18px;
+      text-align:center;
+      border:1px solid rgba(255,255,255,0.03);
+      position:relative;
+      transition:transform .25s, box-shadow .25s;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    }
+    .card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 18px 50px rgba(0,255,102,0.06);
+    }
+    .card h3{
+      margin:8px 0 12px;
+      color:var(--accent);
+      font-size:18px;
+    }
+    .btn{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:700;
+      letter-spacing:0.3px;
+      transition:opacity .15s, transform .15s;
+    }
+    .btn.free{
+      background:var(--accent);
+      color:#000;
+      border:2px solid rgba(0,0,0,0.12);
+    }
+    .btn.free:hover{transform:translateY(-3px);}
+
+    .btn.locked{
+      background:transparent;
+      color:#cbd5d1;
+      border:1px dashed rgba(255,255,255,0.07);
+      cursor:pointer;
+      position:relative;
+      padding-left:44px;
+    }
+    .btn.locked:before{
+      content:"🔐";
+      position:absolute;
+      left:12px;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:18px;
+    }
+    .tag{
+      position:absolute;
+      right:12px;
+      top:12px;
+      background:rgba(0,0,0,0.45);
+      padding:6px 8px;
+      border-radius:8px;
+      font-size:12px;
+      color:var(--muted);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+
+    footer{
+      text-align:center;
+      margin-top:34px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* Modal */
+    .modal-backdrop{
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,0.6);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      z-index:1000;
+      padding:20px;
+    }
+    .modal{
+      width:100%;
+      max-width:420px;
+      background:linear-gradient(180deg,#07120a,#081412);
+      border-radius:12px;
+      padding:20px;
+      border:1px solid rgba(0,255,102,0.06);
+      box-shadow:0 20px 60px rgba(0,0,0,0.7);
+      text-align:left;
+    }
+    .modal h4{margin:0 0 8px;color:var(--accent)}
+    .modal p{margin:0 0 14px;color:var(--muted)}
+    .modal .actions{display:flex;gap:10px;justify-content:flex-end}
+    .modal .actions button{
+      padding:10px 12px;border-radius:10px;border:0;font-weight:700;cursor:pointer
+    }
+    .btn-close{background:#2b2b2b;color:#fff}
+    .btn-buy{background:var(--accent);color:#000}
+
+    /* small screens */
+    @media (max-width:460px){
+      header h1{font-size:18px;padding:10px}
+      .hero{flex-direction:column-reverse;padding:8px}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Naukari Plus</h1>
+    <p>Premium Test Series — Professional Coaching Style Interface</p>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="blurb">
+        <h2>🎯 Prepare Smart • Practice Daily</h2>
+        <p>Top quality test series — clean UX, fast loading, mobile friendly. नीचे दिए गए टेस्ट खोलें और प्रैक्टिस शुरू करें।</p>
+      </div>
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm6srhy_m9K7e4KGluwQ5pgKpQMW-KxjTI4nJ2FFdNw5rt_TVjqdgjxmApbbWeQKfm-g7QNyThnVvPQ9OecncQbLKtwxY2qvIoswjtUc5AUm1HwabZe5B1wQUfPxbLc4xTZF8dN6R1LkZ4P5adlqLHWWZSCfhk46-pbQPLU3mw-Tbaqbw1xf0IvOdhq14/s400/1000379309.jpg" alt="banner">
+    </section>
+
+    <div style="text-align:center;">
+      <span class="section-title">🟢 Free Tests (1–3)</span>
+    </div>
+
+    <section class="grid" style="margin-top:12px;">
+      <!-- Free 1 -->
+      <div class="card">
+        <div class="tag">Free</div>
+        <h3>Test 1</h3>
+        <p style="color:var(--muted);font-size:13px;margin:0 0 12px">Basic practice test</p>
+        <a class="btn free" href="https://naukripulse.github.io/Test/bstc1.html" target="_blank" rel="noopener">Start Test</a>
+      </div>
+
+      <!-- Free 2 -->
+      <div class="card">
+        <div class="tag">Free</div>
+        <h3>Test 2</h3>
+        <p style="color:var(--muted);font-size:13px;margin:0 0 12px">Practice set 2</p>
+        <a class="btn free" href="https://naukripulse.github.io/Test/bstc2.html" target="_blank" rel="noopener">Start Test</a>
+      </div>
+
+      <!-- Free 3 -->
+      <div class="card">
+        <div class="tag">Free</div>
+        <h3>Test 3</h3>
+        <p style="color:var(--muted);font-size:13px;margin:0 0 12px">Practice set 3</p>
+        <a class="btn free" href="https://naukripulse.github.io/Test/bstc3.html" target="_blank" rel="noopener">Start Test</a>
+      </div>
+
+      <!-- Locked 4 -->
+      <div class="card">
+        <div class="tag">Premium</div>
+        <h3>Test 4</h3>
+        <p style="color:var(--muted);font-size:13px;margin:0 0 12px">Advanced practice</p>
+        <a class="btn locked" href="https://naukripulse.github.io/Test/bstc4.htm" data-test="4">🔐 Locked</a>
+      </div>
+
+      <!-- Locked 5 -->
+      <div class="card">
+        <div class="tag">Premium</div>
+        <h3>Test 5</h3>
+        <p style="color:var(--muted);font-size:13px;margin:0 0 12px">Advanced practice</p>
+        <a class="btn locked" href="https://naukripulse.github.io/Test/bstc5.htm" data-test="5">🔐 Locked</a>
+      </div>
+
+      <!-- Locked 6 -->
+      <div class="card">
+        <div class="tag">Premium</div>
+        <h3>Test 6</h3>
+        <p style="color:var(--muted);font-size:13px;margin:0 0 12px">Full-length mock</p>
+        <a class="btn locked" href="https://naukripulse.github.io/Test/bstc6.htm" data-test="6">🔐 Locked</a>
+      </div>
+
+      <!-- Locked 7 -->
+      <div class="card">
+        <div class="tag">Premium</div>
+        <h3>Test 7</h3>
+        <p style="color:var(--muted);font-size:13px;margin:0 0 12px">Full-length mock</p>
+        <a class="btn locked" href="https://naukripulse.github.io/Test/bstc7.htm" data-test="7">🔐 Locked</a>
+      </div>
+
+      <!-- Locked 8 -->
+      <div class="card">
+        <div class="tag">Premium</div>
+        <h3>Test 8</h3>
+        <p style="color:var(--muted);font-size:13px;margin:0 0 12px">Topic-wise test</p>
+        <a class="btn locked" href="https://naukripulse.github.io/Test/bstc8.htm" data-test="8">🔐 Locked</a>
+      </div>
+
+      <!-- Locked 9 -->
+      <div class="card">
+        <div class="tag">Premium</div>
+        <h3>Test 9</h3>
+        <p style="color:var(--muted);font-size:13px;margin:0 0 12px">Topic-wise test</p>
+        <a class="btn locked" href="https://naukripulse.github.io/Test/bstc9.htm" data-test="9">🔐 Locked</a>
+      </div>
+
+      <!-- Locked 10 -->
+      <div class="card">
+        <div class="tag">Premium</div>
+        <h3>Test 10</h3>
+        <p style="color:var(--muted);font-size:13px;margin:0 0 12px">Full syllabus mock</p>
+        <a class="btn locked" href="https://naukripulse.github.io/Test/bstc10.htm" data-test="10">🔐 Locked</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>Unlock all premium tests for <strong>₹99</strong> — Naukari Plus • © 2025</p>
+    </footer>
+  </main>
+
+  <!-- Modal (fake lock) -->
+  <div class="modal-backdrop" id="modal">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+      <h4 id="mTitle">Premium Test — Locked</h4>
+      <p id="mDesc">यह टेस्ट केवल प्रीमियम उपयोगकर्ताओं के लिए उपलब्ध है। पूरा टेस्ट-सीरीज़ अनलॉक करने के लिए ₹99 देकर सबको एक्सेस दें।</p>
+      <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:14px">
+        <button class="btn-close" id="closeBtn">बंद करें</button>
+        <button class="btn-buy" id="buyBtn">Unlock for ₹99</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Prevent locked links from opening and show modal
+    document.querySelectorAll('.btn.locked').forEach(function(el){
+      el.addEventListener('click', function(e){
+        e.preventDefault();
+        // show modal
+        document.getElementById('modal').style.display = 'flex';
+        // optional: you can show which test was clicked
+        var testNo = el.getAttribute('data-test');
+        var title = document.getElementById('mTitle');
+        var desc = document.getElementById('mDesc');
+        title.textContent = 'Test ' + testNo + ' — Locked';
+        desc.textContent = 'यह Test ' + testNo + ' केवल प्रीमियम उपयोगकर्ताओं के लिए उपलब्ध है। सब-टेस्ट खोलने के लिए ₹99 का एक-बार भुगतान आवश्यक है।';
+      });
+    });
+
+    // modal close
+    document.getElementById('closeBtn').addEventListener('click', function(){
+      document.getElementById('modal').style.display = 'none';
+    });
+
+    // buy button (fake) — you can replace with real payment link
+    document.getElementById('buyBtn').addEventListener('click', function(){
+      // Example: redirect to a payment page or WhatsApp
+      window.location.href = 'https://wa.me/919999999999?text=I%20want%20to%20unlock%20Naukari%20Plus%20tests%20(₹99)';
+    });
+
+    // close modal on backdrop click
+    document.getElementById('modal').addEventListener('click', function(e){
+      if(e.target === this) this.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
