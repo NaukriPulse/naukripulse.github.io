@@ -122,7 +122,9 @@
       font-size:18px;
     }
     .btn{
-      display:inline-block;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
       padding:10px 14px;
       border-radius:10px;
       text-decoration:none;
@@ -137,22 +139,21 @@
     }
     .btn.free:hover{transform:translateY(-3px);}
 
-    .btn.locked{
-      background:transparent;
-      color:#cbd5d1;
-      border:1px dashed rgba(255,255,255,0.07);
-      cursor:pointer;
-      position:relative;
-      padding-left:44px;
+    .btn.premium{
+      background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      color:#dbeee2;
+      border:1px solid rgba(255,255,255,0.03);
     }
-    .btn.locked:before{
-      content:"🔐";
-      position:absolute;
-      left:12px;
-      top:50%;
-      transform:translateY(-50%);
-      font-size:18px;
+    .lock-icon{
+      display:inline-block;
+      font-size:16px;
+      color:#ffd166;
+      background:rgba(0,0,0,0.25);
+      padding:6px 8px;
+      border-radius:8px;
+      border:1px solid rgba(255,255,255,0.03);
     }
+
     .tag{
       position:absolute;
       right:12px;
@@ -171,36 +172,6 @@
       color:var(--muted);
       font-size:13px;
     }
-
-    /* Modal */
-    .modal-backdrop{
-      position:fixed;
-      inset:0;
-      background:rgba(0,0,0,0.6);
-      display:none;
-      align-items:center;
-      justify-content:center;
-      z-index:1000;
-      padding:20px;
-    }
-    .modal{
-      width:100%;
-      max-width:420px;
-      background:linear-gradient(180deg,#07120a,#081412);
-      border-radius:12px;
-      padding:20px;
-      border:1px solid rgba(0,255,102,0.06);
-      box-shadow:0 20px 60px rgba(0,0,0,0.7);
-      text-align:left;
-    }
-    .modal h4{margin:0 0 8px;color:var(--accent)}
-    .modal p{margin:0 0 14px;color:var(--muted)}
-    .modal .actions{display:flex;gap:10px;justify-content:flex-end}
-    .modal .actions button{
-      padding:10px 12px;border-radius:10px;border:0;font-weight:700;cursor:pointer
-    }
-    .btn-close{background:#2b2b2b;color:#fff}
-    .btn-buy{background:var(--accent);color:#000}
 
     /* small screens */
     @media (max-width:460px){
@@ -254,61 +225,83 @@
         <a class="btn free" href="https://naukripulse.github.io/Test/bstc3.html" target="_blank" rel="noopener">Start Test</a>
       </div>
 
-      <!-- Locked 4 -->
+      <!-- Premium 4 -->
       <div class="card">
         <div class="tag">Premium</div>
         <h3>Test 4</h3>
         <p style="color:var(--muted);font-size:13px;margin:0 0 12px">Advanced practice</p>
-        <a class="btn locked" href="https://naukripulse.github.io/Test/bstc4.htm" data-test="4">🔐 Locked</a>
+        <a class="btn premium" href="https://naukripulse.github.io/Test/bstc4.htm" target="_blank" rel="noopener">
+          <span>Start Test</span>
+          <span class="lock-icon" title="Locked">🔒</span>
+        </a>
       </div>
 
-      <!-- Locked 5 -->
+      <!-- Premium 5 -->
       <div class="card">
         <div class="tag">Premium</div>
         <h3>Test 5</h3>
         <p style="color:var(--muted);font-size:13px;margin:0 0 12px">Advanced practice</p>
-        <a class="btn locked" href="https://naukripulse.github.io/Test/bstc5.htm" data-test="5">🔐 Locked</a>
+        <a class="btn premium" href="https://naukripulse.github.io/Test/bstc5.htm" target="_blank" rel="noopener">
+          <span>Start Test</span>
+          <span class="lock-icon" title="Locked">🔒</span>
+        </a>
       </div>
 
-      <!-- Locked 6 -->
+      <!-- Premium 6 -->
       <div class="card">
         <div class="tag">Premium</div>
         <h3>Test 6</h3>
         <p style="color:var(--muted);font-size:13px;margin:0 0 12px">Full-length mock</p>
-        <a class="btn locked" href="https://naukripulse.github.io/Test/bstc6.htm" data-test="6">🔐 Locked</a>
+        <a class="btn premium" href="https://naukripulse.github.io/Test/bstc6.htm" target="_blank" rel="noopener">
+          <span>Start Test</span>
+          <span class="lock-icon" title="Locked">🔒</span>
+        </a>
       </div>
 
-      <!-- Locked 7 -->
+      <!-- Premium 7 -->
       <div class="card">
         <div class="tag">Premium</div>
         <h3>Test 7</h3>
         <p style="color:var(--muted);font-size:13px;margin:0 0 12px">Full-length mock</p>
-        <a class="btn locked" href="https://naukripulse.github.io/Test/bstc7.htm" data-test="7">🔐 Locked</a>
+        <a class="btn premium" href="https://naukripulse.github.io/Test/bstc7.htm" target="_blank" rel="noopener">
+          <span>Start Test</span>
+          <span class="lock-icon" title="Locked">🔒</span>
+        </a>
       </div>
 
-      <!-- Locked 8 -->
+      <!-- Premium 8 -->
       <div class="card">
         <div class="tag">Premium</div>
         <h3>Test 8</h3>
         <p style="color:var(--muted);font-size:13px;margin:0 0 12px">Topic-wise test</p>
-        <a class="btn locked" href="https://naukripulse.github.io/Test/bstc8.htm" data-test="8">🔐 Locked</a>
+        <a class="btn premium" href="https://naukripulse.github.io/Test/bstc8.htm" target="_blank" rel="noopener">
+          <span>Start Test</span>
+          <span class="lock-icon" title="Locked">🔒</span>
+        </a>
       </div>
 
-      <!-- Locked 9 -->
+      <!-- Premium 9 -->
       <div class="card">
         <div class="tag">Premium</div>
         <h3>Test 9</h3>
         <p style="color:var(--muted);font-size:13px;margin:0 0 12px">Topic-wise test</p>
-        <a class="btn locked" href="https://naukripulse.github.io/Test/bstc9.htm" data-test="9">🔐 Locked</a>
+        <a class="btn premium" href="https://naukripulse.github.io/Test/bstc9.htm" target="_blank" rel="noopener">
+          <span>Start Test</span>
+          <span class="lock-icon" title="Locked">🔒</span>
+        </a>
       </div>
 
-      <!-- Locked 10 -->
+      <!-- Premium 10 -->
       <div class="card">
         <div class="tag">Premium</div>
         <h3>Test 10</h3>
         <p style="color:var(--muted);font-size:13px;margin:0 0 12px">Full syllabus mock</p>
-        <a class="btn locked" href="https://naukripulse.github.io/Test/bstc10.htm" data-test="10">🔐 Locked</a>
+        <a class="btn premium" href="https://naukripulse.github.io/Test/bstc10.htm" target="_blank" rel="noopener">
+          <span>Start Test</span>
+          <span class="lock-icon" title="Locked">🔒</span>
+        </a>
       </div>
+
     </section>
 
     <footer>
@@ -316,49 +309,5 @@
     </footer>
   </main>
 
-  <!-- Modal (fake lock) -->
-  <div class="modal-backdrop" id="modal">
-    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
-      <h4 id="mTitle">Premium Test — Locked</h4>
-      <p id="mDesc">यह टेस्ट केवल प्रीमियम उपयोगकर्ताओं के लिए उपलब्ध है। पूरा टेस्ट-सीरीज़ अनलॉक करने के लिए ₹99 देकर सबको एक्सेस दें।</p>
-      <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:14px">
-        <button class="btn-close" id="closeBtn">बंद करें</button>
-        <button class="btn-buy" id="buyBtn">Unlock for ₹99</button>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    // Prevent locked links from opening and show modal
-    document.querySelectorAll('.btn.locked').forEach(function(el){
-      el.addEventListener('click', function(e){
-        e.preventDefault();
-        // show modal
-        document.getElementById('modal').style.display = 'flex';
-        // optional: you can show which test was clicked
-        var testNo = el.getAttribute('data-test');
-        var title = document.getElementById('mTitle');
-        var desc = document.getElementById('mDesc');
-        title.textContent = 'Test ' + testNo + ' — Locked';
-        desc.textContent = 'यह Test ' + testNo + ' केवल प्रीमियम उपयोगकर्ताओं के लिए उपलब्ध है। सब-टेस्ट खोलने के लिए ₹99 का एक-बार भुगतान आवश्यक है।';
-      });
-    });
-
-    // modal close
-    document.getElementById('closeBtn').addEventListener('click', function(){
-      document.getElementById('modal').style.display = 'none';
-    });
-
-    // buy button (fake) — you can replace with real payment link
-    document.getElementById('buyBtn').addEventListener('click', function(){
-      // Example: redirect to a payment page or WhatsApp
-      window.location.href = 'https://wa.me/919999999999?text=I%20want%20to%20unlock%20Naukari%20Plus%20tests%20(₹99)';
-    });
-
-    // close modal on backdrop click
-    document.getElementById('modal').addEventListener('click', function(e){
-      if(e.target === this) this.style.display = 'none';
-    });
-  </script>
 </body>
 </html>
